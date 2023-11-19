@@ -6,6 +6,7 @@ import Experience from "./pages/Experience";
 import ProjectDisplay from "./pages/ProjectDisplay";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ScrollButton from './components/ScrollButton'; 
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/experience" element={<Experience />} />          
         </Routes>
       </Router>
+      <ScrollButton />
       <Footer />
     </div>
   );
