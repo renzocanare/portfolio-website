@@ -4,6 +4,17 @@
     font-family: "Arial", sans-serif;
     color: #3e497a;
   }
+
+  .profile-image {
+    border-color:#ffffff;
+    border-style: outset;
+    border-radius: 50%;
+    width: 300px;  
+    height: 300px; 
+    object-fit: cover;
+    margin-top: 20px; 
+    margin-bottom: 0px; 
+  }
   
   .about {
     width: 100%;
@@ -18,17 +29,23 @@
   }
   
   .about h2 {
+    margin-top: 0px; 
+    margin-bottom: 0.5em;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 80px;
     color: #e9d35b;
     height: 50px;
   }
-  
-  .about .prompt {
-    width: 40%;
+  .about .tagline {
+    margin-top: -20px; 
+    width: 30%;
     font-size: 30px;
   }
-  .prompt svg {
+  .about .media {
+    width: 30%;
+    font-size: 30px;
+  }
+  .media svg {
     font-size: 60px;
     margin: 5px;
     color: white;

@@ -2,16 +2,21 @@ import React from "react";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import GithubIcon from "@mui/icons-material/GitHub";
+import ProfileImage from '../assets/profile-image.jpeg'; 
+import DynamicText from '../components/DynamicText';
 import "../styles/Home.css";
 
 function Home() {
   return (
     <div className="home">
       <div className="about">
-        <h2>Hi, My Name is Renzo</h2>
-        <div className="prompt">
-          <p>A Computer Engineering student from the National University of Singapore 
-            exploring Machine Learning, AI and Hardware & Software Engineering.</p>
+        <img src={ProfileImage} alt="Renzo" className="profile-image"/>
+        <h2>Hi, I'm Renzo</h2>
+        <DynamicText />
+        <div className="tagline">
+          <p>Software & Hardware Engineering, Machine Learning.</p>
+        </div>
+        <div className="media">
           <a href="https://www.linkedin.com/in/renzo-canare/" target="_blank" rel="noreferrer">
             <LinkedInIcon />
           </a>
