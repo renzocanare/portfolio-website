@@ -12,9 +12,15 @@ function Home() {
         <div className="prompt">
           <p>A Computer Engineering student from the National University of Singapore 
             exploring Machine Learning, AI and Hardware & Software Engineering.</p>
-          <LinkedInIcon />
-          <EmailIcon />
-          <GithubIcon />
+          <a href="https://www.linkedin.com/in/renzo-canare/" target="_blank" rel="noreferrer">
+            <LinkedInIcon />
+          </a>
+          <a href="mailto:renzo_canare@hotmail.com">
+            <EmailIcon />
+          </a>
+          <a href="https://github.com/renzocanare" target="_blank" rel="noreferrer">
+            <GithubIcon />
+          </a>
         </div>
       </div>
       <div className="skills">
