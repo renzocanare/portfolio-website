@@ -77,9 +77,11 @@
     .about h2 {
       font-size: 40px;
     }
-  
-    .about .prompt {
-      margin-top: 10px;
+    .about .tagline {
+      font-size: 20px;
+      width: 80%;
+    }
+    .about .media {
       font-size: 20px;
       width: 80%;
     }

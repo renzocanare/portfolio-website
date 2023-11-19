@@ -22,13 +22,15 @@
   
   @media (max-width: 768px) {
     .dynamic-text-container {
-      font-size: 1em; 
-    }
+        font-size: 2.0em; 
+        white-space: wrap; 
+      }
   }
 
   @media (max-width: 480px) {
     .dynamic-text-container {
-      font-size: 0.8em; 
-    }
+        font-size: 1.5em; 
+        white-space: wrap; 
+      }
   }
   
