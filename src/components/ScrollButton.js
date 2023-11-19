@@ -5,13 +5,13 @@ import { Button } from '../styles/ScrollButton';
 const ScrollButton = () =>{ 
   
   const [visible, setVisible] = useState(false) 
-  
+  const pageScroll = 500
   const toggleVisible = () => { 
     const scrolled = document.documentElement.scrollTop; 
-    if (scrolled > 300){ 
+    if (scrolled > pageScroll){ 
       setVisible(true) 
     }  
-    else if (scrolled <= 300){ 
+    else if (scrolled <= pageScroll){ 
       setVisible(false) 
     } 
   }; 
