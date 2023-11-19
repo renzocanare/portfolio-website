@@ -14,7 +14,7 @@ function Home() {
         <h2>Hi, I'm Renzo</h2>
         <DynamicText />
         <div className="tagline">
-          <p>Software & Hardware Engineering, Machine Learning.</p>
+          <p>Hardware & Software Engineering, Machine Learning.</p>
         </div>
         <div className="media">
           <a href="https://www.linkedin.com/in/renzo-canare/" target="_blank" rel="noreferrer">
