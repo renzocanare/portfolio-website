@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import GithubIcon from "@mui/icons-material/GitHub";
-import ProfileImage from '../assets/profile-image.jpeg'; 
+import ProfileImage from '../assets/profile-image.jpeg';
+import ProfileImageFun from '../assets/profile-image-fun.jpg'; 
 import DynamicText from '../components/DynamicText';
 import { COriginal } from "devicons-react";
 import { CplusplusOriginal } from "devicons-react";
@@ -13,10 +14,19 @@ import { PostgresqlOriginalWordmark } from "devicons-react";
 import "../styles/Home.css";
 
 function Home() {
+  const [isFlipped, setIsFlipped] = useState(false);
+
+  const handleFlip = () => {
+    setIsFlipped(!isFlipped);
+  };
+  
   return (
     <div className="home">
       <div className="about">
-        <img src={ProfileImage} alt="Renzo" className="profile-image"/>
+      <div className={`profile-container ${isFlipped ? 'flipped' : ''}`} onClick={handleFlip}>
+        <img src={ProfileImage} alt="Renzo" className="profile-image front"/>
+        <img src={ProfileImageFun} alt="Renzo fun" className="profile-image back"/>
+      </div>
         <h2>Hi, I'm Renzo</h2>
         <DynamicText />
         <div className="tagline">

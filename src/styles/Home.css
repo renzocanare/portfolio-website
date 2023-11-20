@@ -1,110 +1,199 @@
 .home {
-    width: 100%;
-    align-items: center;
-    font-family: 'Open Sans', sans-serif; /* Add this line */
-    color: #3e497a;
-    
+  width: 100%;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  color: #3e497a;
+
+}
+
+.profile-container {
+  display: flex;
+  perspective: 1000px;
+  width: 300px;
+  height: 300px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  align-items: center;
+  transition: transform 0.3s ease-in-out; 
+  transform-origin: center; 
+}
+
+.profile-container,
+.profile-container:hover {
+  transition: transform 0.3s ease-in-out;
+}
+
+.profile-container:hover {
+  transform: scale(1.1);
+}
+
+.profile-image {
+  display: flex;
+  border-color: #ffffff;
+  border-style: outset;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: transform 0.6s ease; 
+}
+
+.profile-container.flipped .front,
+.profile-container.flipped .back {
+  transition: transform 0.6s ease;
+}
+
+.profile-container.flipped .front {
+  transform: rotateY(180deg);
+}
+
+.profile-container.flipped .back {
+  transform: rotateY(0deg);
+}
+
+.front {
+  transform: rotateY(0deg);
+}
+
+.back {
+  transform: rotateY(-180deg);
+}
+
+.about {
+  width: 100%;
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #21325e;
+  color: #f0f0f0;
+}
+
+.about h2 {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-size: 80px;
+  color: #e9d35b;
+  height: 50px;
+}
+
+.about .tagline {
+  margin-top: -30px;
+  width: 50%;
+  font-size: 30px;
+}
+
+.about .media {
+  width: 30%;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.media svg {
+  font-size: 60px;
+  margin: 5px;
+  color: white;
+}
+
+.skills {
+  font-size: 35px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.skills h1 {
+  color: #3e497a;
+}
+
+.skills .list {
+  list-style: none;
+  width: 60%;
+}
+
+.list span {
+  font-size: 20px;
+}
+
+.skill-icon {
+  transition: transform 0.3s ease;
+}
+
+.skill-icon:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 800px) {
+  .about h2 {
+    font-size: 40px;
   }
 
-  .profile-image {
-    border-color:#ffffff;
-    border-style: outset;
-    border-radius: 50%;
-    width: 300px;  
-    height: 300px; 
-    object-fit: cover;
-    margin-top: 20px; 
-    margin-bottom: 0px; 
+  .about .tagline {
+    font-size: 20px;
+    width: 80%;
   }
-  
-  .about {
-    width: 100%;
-    height: calc(100vh - 50px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+  .about .media {
+    font-size: 20px;
+    width: 80%;
+  }
+
+  .skills {
     text-align: center;
-    background-color: #21325e;
-    color: #f0f0f0;
+  }
+
+  .list {
+    padding: 0;
+  }
+
+  .skills h2 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .profile-container{
+    width: 200px;
+    height: 200px;
+  }
+  .profile-image {
+    width: 200px;
+    height: 200px;
   }
   
   .about h2 {
-    margin-top: 0px; 
-    margin-bottom: 0.5em;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 80px;
-    color: #e9d35b;
-    height: 50px;
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: -10px;
   }
+
   .about .tagline {
-    margin-top: -20px; 
-    width: 30%;
-    font-size: 30px;
+    margin-top: -50px;
+    font-size: 20px;
+    width: 80%;
   }
+
   .about .media {
-    width: 30%;
-    font-size: 30px;
-    margin-bottom: 20px;
+    font-size: 20px;
+    width: 80%;
   }
-  .media svg {
-    font-size: 60px;
-    margin: 5px;
-    color: white;
-  }
-  
+
   .skills {
-    font-size: 35px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
   }
-  
-  .skills h1 {
-    color: #3e497a;
+
+  .list {
+    padding: 0;
   }
-  
-  .skills .list {
-    list-style: none;
-    width: 60%;
+
+  .skills h2 {
+    font-size: 30px;
   }
-  
-  .list span {
-    font-size: 20px;
-  }
-  
-  .skill-icon {
-    transition: transform 0.3s ease; 
-  }
-  
-  .skill-icon:hover {
-    transform: scale(1.1); 
-  }
-  
-  @media only screen and (max-width: 600px) {
-    .about h2 {
-      font-size: 40px;
-    }
-    .about .tagline {
-      font-size: 20px;
-      width: 80%;
-    }
-    .about .media {
-      font-size: 20px;
-      width: 80%;
-    }
-  
-    .skills {
-      text-align: center;
-    }
-    .list {
-      padding: 0;
-    }
-  
-    .skills h2 {
-      font-size: 30px;
-    }
-  }
+}
