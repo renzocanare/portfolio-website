@@ -7,12 +7,14 @@ import ProjectDisplay from "./pages/ProjectDisplay";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ScrollButton from './components/ScrollButton'; 
+import RedirectHandler from './components/RedirectHandler';
 
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <RedirectHandler />
         <Navbar /> 
         <Routes>
           <Route path="/" element={<Home />} />
