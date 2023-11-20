@@ -1,22 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.636cb701.css",
-    "main.js": "/static/js/main.4804a4de.js",
+    "main.css": "/static/css/main.0c58fd51.css",
+    "main.js": "/static/js/main.81868d1e.js",
     "static/js/787.861fdc3f.chunk.js": "/static/js/787.861fdc3f.chunk.js",
     "static/media/proj6.png": "/static/media/proj6.bbda91ca7f209247913f.png",
+    "static/media/evone-logo.png": "/static/media/evone-logo.0728eef08a229bc7dac4.png",
+    "static/media/cjc-logo.jpg": "/static/media/cjc-logo.951cbdd942f9f8d0e145.jpg",
     "static/media/proj5.jpg": "/static/media/proj5.0648813998893b8c53d0.jpg",
     "static/media/proj3.webp": "/static/media/proj3.419d7d3eb4e124126660.webp",
     "static/media/proj2.jpg": "/static/media/proj2.496e4d289eaa0f409ab8.jpg",
+    "static/media/hp-logo.png": "/static/media/hp-logo.e1d58ca9acd6403de21f.png",
     "static/media/profile-image.jpeg": "/static/media/profile-image.63dc8418e927e3f79821.jpeg",
     "static/media/proj1.jpg": "/static/media/proj1.3fb0bdc7583872ea12b3.jpg",
+    "static/media/sps-logo.png": "/static/media/sps-logo.a7c5343e2301d059297f.png",
     "static/media/proj4.webp": "/static/media/proj4.21aa3100d2e1859f6029.webp",
+    "static/media/nus-logo.png": "/static/media/nus-logo.e0ae474ae59a6a04c803.png",
+    "static/media/dls-logo.png": "/static/media/dls-logo.0f955da8da3fd40ef1cd.png",
     "index.html": "/index.html",
-    "main.636cb701.css.map": "/static/css/main.636cb701.css.map",
-    "main.4804a4de.js.map": "/static/js/main.4804a4de.js.map",
+    "main.0c58fd51.css.map": "/static/css/main.0c58fd51.css.map",
+    "main.81868d1e.js.map": "/static/js/main.81868d1e.js.map",
     "787.861fdc3f.chunk.js.map": "/static/js/787.861fdc3f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.636cb701.css",
-    "static/js/main.4804a4de.js"
+    "static/css/main.0c58fd51.css",
+    "static/js/main.81868d1e.js"
   ]
 }
