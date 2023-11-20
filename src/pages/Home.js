@@ -4,6 +4,12 @@ import EmailIcon from "@mui/icons-material/Email";
 import GithubIcon from "@mui/icons-material/GitHub";
 import ProfileImage from '../assets/profile-image.jpeg'; 
 import DynamicText from '../components/DynamicText';
+import { COriginal } from "devicons-react";
+import { CplusplusOriginal } from "devicons-react";
+import { CsharpOriginal } from "devicons-react";
+import { JavaOriginalWordmark } from "devicons-react";
+import { PythonOriginalWordmark } from "devicons-react"
+import { PostgresqlOriginalWordmark } from "devicons-react";
 import "../styles/Home.css";
 
 function Home() {
@@ -44,8 +50,15 @@ function Home() {
             </span>
           </li>
           <li className="item">
-            <h2>Languages</h2>
-            <span>C, C++, C#, Java, Python</span>
+            <h2>Programming Languages</h2>
+            <span>
+              <COriginal className="skill-icon" color="currentColor" size="100"/> 
+              <CplusplusOriginal className="skill-icon" color="red" size="100"/> 
+              <CsharpOriginal className="skill-icon" color="red" size="100"/> 
+              <JavaOriginalWordmark className="skill-icon" color="red" size="100"/> 
+              <PythonOriginalWordmark className="skill-icon" color="red" size="100"/>
+              <PostgresqlOriginalWordmark className="skill-icon" color="red" size="100"/>
+            </span>
           </li>
         </ol>
       </div>
