@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.0c58fd51.css",
-    "main.js": "/static/js/main.82c9e458.js",
+    "main.css": "/static/css/main.916c85a1.css",
+    "main.js": "/static/js/main.b9bb087d.js",
     "static/js/787.861fdc3f.chunk.js": "/static/js/787.861fdc3f.chunk.js",
+    "static/media/profile-image-fun.jpg": "/static/media/profile-image-fun.ec40bc18b4937bc9e7bc.jpg",
     "static/media/proj6.png": "/static/media/proj6.bbda91ca7f209247913f.png",
     "static/media/evone-logo.png": "/static/media/evone-logo.0728eef08a229bc7dac4.png",
     "static/media/cjc-logo.jpg": "/static/media/cjc-logo.951cbdd942f9f8d0e145.jpg",
@@ -17,12 +18,12 @@
     "static/media/nus-logo.png": "/static/media/nus-logo.e0ae474ae59a6a04c803.png",
     "static/media/dls-logo.png": "/static/media/dls-logo.0f955da8da3fd40ef1cd.png",
     "index.html": "/index.html",
-    "main.0c58fd51.css.map": "/static/css/main.0c58fd51.css.map",
-    "main.82c9e458.js.map": "/static/js/main.82c9e458.js.map",
+    "main.916c85a1.css.map": "/static/css/main.916c85a1.css.map",
+    "main.b9bb087d.js.map": "/static/js/main.b9bb087d.js.map",
     "787.861fdc3f.chunk.js.map": "/static/js/787.861fdc3f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0c58fd51.css",
-    "static/js/main.82c9e458.js"
+    "static/css/main.916c85a1.css",
+    "static/js/main.b9bb087d.js"
   ]
 }
