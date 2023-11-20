@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.01b96856.css",
-    "main.js": "/static/js/main.b9bb087d.js",
+    "main.css": "/static/css/main.de04cc7e.css",
+    "main.js": "/static/js/main.0ebff438.js",
     "static/js/787.861fdc3f.chunk.js": "/static/js/787.861fdc3f.chunk.js",
     "static/media/profile-image-fun.jpg": "/static/media/profile-image-fun.ec40bc18b4937bc9e7bc.jpg",
     "static/media/proj6.png": "/static/media/proj6.bbda91ca7f209247913f.png",
@@ -18,12 +18,13 @@
     "static/media/nus-logo.png": "/static/media/nus-logo.e0ae474ae59a6a04c803.png",
     "static/media/dls-logo.png": "/static/media/dls-logo.0f955da8da3fd40ef1cd.png",
     "index.html": "/index.html",
-    "main.01b96856.css.map": "/static/css/main.01b96856.css.map",
-    "main.b9bb087d.js.map": "/static/js/main.b9bb087d.js.map",
+    "static/media/scoll-button.svg": "/static/media/scoll-button.efe464647800da84bf280de7ae727dc8.svg",
+    "main.de04cc7e.css.map": "/static/css/main.de04cc7e.css.map",
+    "main.0ebff438.js.map": "/static/js/main.0ebff438.js.map",
     "787.861fdc3f.chunk.js.map": "/static/js/787.861fdc3f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.01b96856.css",
-    "static/js/main.b9bb087d.js"
+    "static/css/main.de04cc7e.css",
+    "static/js/main.0ebff438.js"
   ]
 }
