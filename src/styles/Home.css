@@ -44,6 +44,7 @@
   .about .media {
     width: 30%;
     font-size: 30px;
+    margin-bottom: 20px;
   }
   .media svg {
     font-size: 60px;
