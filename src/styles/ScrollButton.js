@@ -12,14 +12,14 @@ export const Button = styled.div`
   color: gray;
 
   /* Media query for tablets */
-  @media (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
     left: 90%; /* Adjust position for smaller screens */
     font-size: 2rem; /* Smaller font size */
     bottom: 40px; /* Adjust bottom position */
   }
 
   /* Media query for mobile devices */
-  @media (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     left: 90%; /* Adjust position for very small screens */
     font-size: 1.5rem; /* Even smaller font size */
     bottom: 30px; /* Adjust bottom position */
