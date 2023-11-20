@@ -2,9 +2,8 @@
 <html>
 <head>
   <script>
-    // Redirect to the homepage and then replace the history
+    localStorage.setItem('redirectPath', '/experience');
     window.location.href = '/';
-    history.replaceState(null, null, '/experience');
   </script>
 </head>
 <body>
