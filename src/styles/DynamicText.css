@@ -1,6 +1,6 @@
 .dynamic-text-container {
     display: flex;
-    font-family: "Arial", sans-serif;
+    font-family: 'Noto Sans Mono';
     justify-content: center; 
     align-items: center; 
     height: 100px; 

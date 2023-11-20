@@ -1,11 +1,10 @@
 .overall {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Noto Sans Mono';
 }
 
 .timeline-header {
   width: 100%;
   text-align: center;
-  font-family: 'Open Sans', sans-serif; 
   color: #000000;
 }
 
