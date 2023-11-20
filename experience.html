@@ -2,9 +2,9 @@
 <html>
 <head>
   <script>
-    // Page redirect.
-    var path = window.location.pathname;
-    window.location.replace(path);
+    // Redirect to the homepage and then replace the history
+    window.location.href = '/';
+    history.replaceState(null, null, '/experience');
   </script>
 </head>
 <body>
