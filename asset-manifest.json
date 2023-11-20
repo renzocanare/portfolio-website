@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0c58fd51.css",
-    "main.js": "/static/js/main.81868d1e.js",
+    "main.js": "/static/js/main.82c9e458.js",
     "static/js/787.861fdc3f.chunk.js": "/static/js/787.861fdc3f.chunk.js",
     "static/media/proj6.png": "/static/media/proj6.bbda91ca7f209247913f.png",
     "static/media/evone-logo.png": "/static/media/evone-logo.0728eef08a229bc7dac4.png",
@@ -18,11 +18,11 @@
     "static/media/dls-logo.png": "/static/media/dls-logo.0f955da8da3fd40ef1cd.png",
     "index.html": "/index.html",
     "main.0c58fd51.css.map": "/static/css/main.0c58fd51.css.map",
-    "main.81868d1e.js.map": "/static/js/main.81868d1e.js.map",
+    "main.82c9e458.js.map": "/static/js/main.82c9e458.js.map",
     "787.861fdc3f.chunk.js.map": "/static/js/787.861fdc3f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0c58fd51.css",
-    "static/js/main.81868d1e.js"
+    "static/js/main.82c9e458.js"
   ]
 }
