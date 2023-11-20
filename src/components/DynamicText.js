@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
+import { TypedList } from "../helpers/TypedList";
 import '../styles/DynamicText.css';
 
 const DynamicText = () => {
@@ -7,14 +8,7 @@ const DynamicText = () => {
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: [
-        "Computer Engineering Student at NUS", 
-        "Hardware Engineering and Design",
-        "Machine Learning and Data Science",
-        "GameBoy Modding",
-        "Pet Shrimp (yes, these aren't for eating)",
-        "DJing 2000's Music"
-      ],
+      strings: TypedList,
       startDelay: 300,
       typeSpeed: 50,
       backSpeed: 40,
