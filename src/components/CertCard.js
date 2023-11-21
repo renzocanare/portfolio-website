@@ -26,7 +26,7 @@ function CertCard({ frontContent, backContent, linkToCertificate, certReady, des
         </div>
         <div className="flip-card-back" style={cardStyle}>
           <div className='back-content'>{backContent}</div>
-          {certReady == true
+          {certReady === true
             ? <a href={linkToCertificate} target="_blank" rel="noreferrer" className="certificate-link">VIEW CERTIFICATE</a>
             : <div className='no-certificate'>NOT READY</div>
           }
