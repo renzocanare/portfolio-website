@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: center;
   font-family: 'Noto Sans Mono';
+  /* box-shadow: 0 9px 25px 0 rgba(132,128,177,0.28); */
 }
 
 .links {
@@ -27,7 +28,8 @@
 .navbar a.active {
   background-color: #f0f0f0;
   color: #21325e;
-  border-radius: 5px; 
+  border-radius: 5px;
+  box-shadow: 0 5px 25px 2px rgba(48, 48, 48, 0.28); 
 }
 
 .navbar a:hover,

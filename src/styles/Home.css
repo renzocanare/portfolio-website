@@ -2,7 +2,7 @@
   width: 100%;
   align-items: center;
   font-family: 'Noto Sans Mono';
-  color: #3e497a;
+  color: #272727;
 
 }
 
@@ -14,8 +14,8 @@
   margin-top: 20px;
   margin-bottom: 0px;
   align-items: center;
-  transition: transform 0.3s ease-in-out; 
-  transform-origin: center; 
+  transition: transform 0.3s ease-in-out;
+  transform-origin: center;
 }
 
 .profile-container,
@@ -37,7 +37,8 @@
   object-fit: cover;
   backface-visibility: hidden;
   position: absolute;
-  transition: transform 0.6s ease; 
+  transition: transform 0.6s ease;
+  box-shadow: 0 9px 25px 0 rgba(48, 48, 48, 0.28);
 }
 
 .profile-container.flipped .front,
@@ -71,6 +72,8 @@
   text-align: center;
   background-color: #21325e;
   color: #f0f0f0;
+  box-shadow: 0 25px 25px 0 rgba(132, 128, 177, 0.28);
+
 }
 
 .about h2 {
@@ -106,20 +109,23 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  text-align: left;
+  max-width: 700px;
+  margin: auto;
+  overflow: hidden;
 }
 
-.skills h1 {
-  color: #3e497a;
+.skills h2 {
+  color: #272727;
+  font-size: 30px;
 }
 
-.skills .list {
-  list-style: none;
-  width: 60%;
-}
-
-.list span {
+.skills .body-text {
   font-size: 20px;
+}
+
+.skill-badges {
+  text-align: center;
 }
 
 .skill-icon {
@@ -131,6 +137,16 @@
 }
 
 @media only screen and (max-width: 800px) {
+  .profile-container {
+    width: 200px;
+    height: 200px;
+  }
+
+  .profile-image {
+    width: 200px;
+    height: 200px;
+  }
+
   .about h2 {
     font-size: 40px;
   }
@@ -146,11 +162,16 @@
   }
 
   .skills {
-    text-align: center;
+    text-align: left;
+    padding: 10px;
   }
 
-  .list {
-    padding: 0;
+  .skills .body-text {
+    font-size: 15px;
+  }
+
+  .skill-badges {
+    text-align: center;
   }
 
   .skills h2 {
@@ -159,15 +180,16 @@
 }
 
 @media only screen and (max-width: 480px) {
-  .profile-container{
+  .profile-container {
     width: 200px;
     height: 200px;
   }
+
   .profile-image {
     width: 200px;
     height: 200px;
   }
-  
+
   .about h2 {
     font-size: 40px;
     margin-top: 30px;
@@ -186,6 +208,19 @@
   }
 
   .skills {
+    text-align: left;
+    padding: 10px;
+    max-width: 300px;
+  }
+
+  .skills .body-text {
+    font-size: 15px;
+    /* padding-left: 10px; */
+    padding-right: 10px;
+
+  }
+
+  .skill-badges {
     text-align: center;
   }
 
