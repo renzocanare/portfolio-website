@@ -1,6 +1,7 @@
 export const TypedList = [
     "NUS Computer Engineering", 
-    "Hardware Engineering and Design",
+    "Hardware Engineering",
+    "Hardware Design",
     "Machine Learning",
     "Data Science",
     "Retro GameBoy Modding",
