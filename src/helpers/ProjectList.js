@@ -1,39 +1,64 @@
-import Proj1 from "../assets/proj1.jpg";
 import Proj2 from "../assets/proj2.jpg";
-import Proj3 from "../assets/proj3.webp";
-import Proj4 from "../assets/proj4.webp";
-import Proj5 from "../assets/proj5.jpg";
-import Proj6 from "../assets/proj6.png";
+import PortfolioBanner from "../assets/portfolio-banner.png";
+import CG4002Banner from "../assets/cg4002-banner.png"
 
-export const ProjectList = [
+export const PersonalProjectList = [
   {
-    name: "Dijkstra Algorithm Visualizer",
-    image: Proj1,
-    skills: "JavaScript,HTML,CSS",
+    image: PortfolioBanner,
+    name: "Portfolio Website",
+    status: "In Progress",
+    shortdesc: "A ReactJS website to showcase my work (you're looking at it).",
+    longdesc: "This is a long description inside the modal.",
+    skills: ["React", "JavaScript", "HTML", "CSS"],
+    ghlink:"https://github.com/renzocanare/portfolio-website",
+    ghlinkavail: true,
+    ghlinkreason: ""
   },
   {
-    name: "Ecommerce Website",
     image: Proj2,
-    skills: "React,Node.js,MongoDB",
+    name: "Sentiment-based Algorithmic Trading",
+    status: "Paused (to study for school)",
+    shortdesc: "Using sentiment from online articles to enter trading positions.",
+    longdesc: "This is a long description inside the modal.",
+    skills: ["Python", "Machine Learning", "NLP (spaCy)", "Doccano"],
+    ghlink:"",
+    ghlinkavail: false,
+    ghlinkreason: "Private"
+  },
+];
+
+export const SchoolProjectList = [
+  {
+    image: Proj2,
+    name: "EE4211 Data Science for the Internet of Things",
+    status: "Completed Semester 1 AY23/24",
+    shortdesc: "Predicting carpark availability in Singapore based on historical data using various Machine Learning models.",
+    longdesc: "This is a long description inside the modal.",
+    skills: ["Python", "SKLearn", "Machine Learning"],
+    ghlink:"",
+    ghlinkavail: false,
+    ghlinkreason: "Coming Soon"
   },
   {
-    name: "Spotify Clone",
-    image: Proj3,
-    skills: "React,Node.js,MongoDB,SpotifyAPI",
+    image: CG4002Banner,
+    name: "CG4002 Computer Engineering Capstone",
+    status: "Completed Semester 1 AY22/23",
+    shortdesc: "Developed the Augmented Reality Visualizer component for our Laser Tag system using Unity AR.",
+    longdesc: "This is a long description inside the modal.",
+    skills: ["Unity AR", "C# Programming", "MQTT", "Python"],
+    ghlink:"",
+    ghlinkavail: false,
+    ghlinkreason: "Coming Soon"
   },
   {
-    name: "Social Media Website",
-    image: Proj4,
-    skills: "React,Node.js,MySQL,GraphQL",
-  },
-  {
-    name: "Dashboard Visualizer",
-    image: Proj5,
-    skills: "JavaScript,HTML,CSS",
-  },
-  {
-    name: "Mobile Game",
-    image: Proj6,
-    skills: "React Native,JavaScript,HTML,CSS",
+    image: Proj2,
+    name: "CS2113T Software Engineering & OOP",
+    status: "Completed Semester 1 AY21/22",
+    shortdesc: "A CLI application that helps restaurant hawkers and owners to keep track of their food resources.",
+    longdesc: "This is a long description inside the modal.",
+    skills: ["Java", "Software Engineering", "Agile Programming"],
+    ghlink:"",
+    ghlinkavail: false,
+    ghlinkreason: "Coming Soon"
   },
 ];
