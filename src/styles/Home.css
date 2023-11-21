@@ -142,6 +142,7 @@
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 20px;
   padding: 20px;
+  align-items: center;
 }
 
 @media only screen and (max-width: 800px) {
@@ -187,10 +188,15 @@
   }
 
   .certifications-container {
-    align-items: center;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 20px;
+  }
+
+  .certifications-container-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -230,7 +236,6 @@
 
   .skills .body-text {
     font-size: 15px;
-    /* padding-left: 10px; */
     padding-right: 10px;
 
   }
@@ -248,7 +253,6 @@
   }
   
   .certifications-container {
-    align-items: center;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 20px;

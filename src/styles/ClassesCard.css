@@ -7,9 +7,14 @@
   text-align: left;
   box-shadow: 0 4px 10px 0 rgba(132, 128, 177, 0.28);
   height: auto;
-  min-height: 490px; 
+  min-height: 490px;
+  transition: transform 0.6s ease;
 }
 
+.classes-card:hover {
+  transform: scale(1.01);
+  transition: transform 0.6s ease;
+}
 .course-title {
   font-size: 18px;
   margin-bottom: 10px;
