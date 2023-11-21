@@ -5,12 +5,14 @@ import GithubIcon from "@mui/icons-material/GitHub";
 import ProfileImage from '../assets/profile-image.jpeg';
 import ProfileImageFun from '../assets/profile-image-fun.jpg';
 import DynamicText from '../components/DynamicText';
-import { COriginal } from "devicons-react";
-import { CplusplusOriginal } from "devicons-react";
-import { CsharpOriginal } from "devicons-react";
-import { JavaOriginalWordmark } from "devicons-react";
-import { PythonOriginalWordmark } from "devicons-react"
-import { PostgresqlOriginalWordmark } from "devicons-react";
+import CertCard from '../components/CertCard';
+import { CertList } from "../helpers/CertificationsList";
+import CarouselComponent from '../components/CarouselClasses'
+import { 
+  COriginal, CplusplusOriginal, CsharpOriginal, 
+  JavaOriginalWordmark, PythonOriginalWordmark, 
+  PostgresqlOriginalWordmark 
+} from "devicons-react";
 import "../styles/Home.css";
 
 function Home() {
@@ -46,6 +48,7 @@ function Home() {
       </div>
       <div className="skills">
         <div>
+          {/* About me section */}
           <h2>Hello World_</h2>
           <p className="body-text">
             <p>
@@ -65,14 +68,7 @@ function Home() {
               losing in Magic: The Gathering or looking after my pet shrimp.
             </p>
           </p>
-          {/* <h2>Software Engineering</h2>
-          <span>
-            Insert skills here.
-          </span>
-          <h2>Hardware Engineering</h2>
-          <span>
-            Insert skills here.
-          </span> */}
+          {/* List of Programming Languages Section */}
           <h2>Programming Languages_</h2>
           <div className="skill-badges">
             <span>
@@ -84,10 +80,26 @@ function Home() {
               <PostgresqlOriginalWordmark className="skill-icon" color="red" size="100" />
             </span>
           </div>
-          <h2>Certifications_</h2>
-          <p className="body-text">
-            Insert certification cards here.
-          </p>
+          {/* Certifications Section */}
+          <h2>Self Learning Certifications_</h2>
+          <div className="certifications-container">
+          {CertList.map((cert) => {
+              return (
+                <CertCard
+                  key={cert.desc}
+                  frontContent={cert.frontimg}
+                  backContent={<p>{cert.backtext}</p>}
+                  linkToCertificate={cert.certlink}
+                  description={cert.desc}
+                  backgroundColor={cert.backgroundColor} // Pass the background color
+                />
+              );
+            })}
+          </div>
+          <h2>Relevant Modules Taken at NUS_</h2>
+          <div className="certifications-container">
+            <CarouselComponent/>
+          </div>
         </div>
       </div>
     </div>

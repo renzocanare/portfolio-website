@@ -136,6 +136,22 @@
   transform: scale(1.1);
 }
 
+.certifications-container {
+  display: grid;
+  height: auto;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.certifications-container {
+  display: grid;
+  height: auto;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
 @media only screen and (max-width: 800px) {
   .profile-container {
     width: 200px;
@@ -176,6 +192,13 @@
 
   .skills h2 {
     font-size: 30px;
+  }
+
+  .certifications-container {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
   }
 }
 
@@ -230,5 +253,12 @@
 
   .skills h2 {
     font-size: 30px;
+  }
+  
+  .certifications-container {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
   }
 }
