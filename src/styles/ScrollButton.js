@@ -1,27 +1,39 @@
 import styled from 'styled-components';
 
 export const Button = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #21325e;
+  right: 30px; 
+  bottom: 20px; 
   position: fixed;
-  width: 100%;
-  left: 95%;
-  bottom: 50px;
-  height: 20px;
-  font-size: 3rem;
-  z-index: 1;
+  z-index: 99;
   cursor: pointer;
-  color: gray;
+  border-radius: 10px;
+  width: 40px;
+  height: 50px;
+  transition: opacity 0.5s ease-in-out, transform 0.3s ease;
+  box-shadow: 0 9px 25px 0 rgba(132,128,177,0.28);f
+  margin: 0em;
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 7px;
 
   /* Media query for tablets */
   @media only screen and (max-width: 768px) {
-    left: 90%; /* Adjust position for smaller screens */
-    font-size: 2rem; /* Smaller font size */
-    bottom: 40px; /* Adjust bottom position */
+    right: 30px; 
+    bottom: 40px; 
   }
 
   /* Media query for mobile devices */
   @media only screen and (max-width: 480px) {
-    left: 90%; /* Adjust position for very small screens */
-    font-size: 1.5rem; /* Even smaller font size */
-    bottom: 30px; /* Adjust bottom position */
+    right: 30px; 
+    bottom: 40px; 
+  }
+
+  &:hover {
+    transform: scale(1.1); 
   }
 `;

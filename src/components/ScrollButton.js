@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FaArrowCircleUp } from 'react-icons/fa';
+import { ReactComponent as NiceButton} from '../assets/scoll-button.svg'
 import { Button } from '../styles/ScrollButton';
 
 const ScrollButton = () => {
@@ -32,7 +32,7 @@ const ScrollButton = () => {
 
   return (
     <Button onClick={scrollToTop} style={{ display: visible ? 'inline' : 'none' }}>
-      <FaArrowCircleUp />
+      <NiceButton width="25" height="25" />
     </Button>
   );
 };
