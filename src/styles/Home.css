@@ -21,6 +21,7 @@
 .profile-container,
 .profile-container:hover {
   transition: transform 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .profile-container:hover {
@@ -251,7 +252,7 @@
   .skills h2 {
     font-size: 30px;
   }
-  
+
   .certifications-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
