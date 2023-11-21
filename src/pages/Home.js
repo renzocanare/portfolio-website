@@ -83,18 +83,19 @@ function Home() {
           {/* Certifications Section */}
           <h2>Self Learning Certifications_</h2>
           <div className="certifications-container">
-          {CertList.map((cert) => {
-              return (
-                <CertCard
-                  key={cert.desc}
-                  frontContent={cert.frontimg}
-                  backContent={<p>{cert.backtext}</p>}
-                  linkToCertificate={cert.certlink}
-                  description={cert.desc}
-                  backgroundColor={cert.backgroundColor} // Pass the background color
-                />
-              );
-            })}
+            {CertList.map((cert) => {
+                return (
+                  <CertCard
+                    key={cert.desc}
+                    frontContent={cert.frontimg}
+                    backContent={<p>{cert.backtext}</p>}
+                    linkToCertificate={cert.certlink}
+                    certReady={cert.certready}
+                    description={cert.desc}
+                    backgroundColor={cert.backgroundColor}
+                  />
+                );
+              })}
           </div>
           <h2>Relevant Modules Taken at NUS_</h2>
           <div className="certifications-container">
