@@ -7,7 +7,7 @@ export const PersonalProjectList = [
     image: PortfolioBanner,
     name: "Portfolio Website",
     status: "In Progress",
-    shortdesc: "A ReactJS website to showcase my work (you're looking at it).",
+    shortdesc: "A ReactJS website to showcase my work - this website!",
     longdesc: "This is a long description inside the modal.",
     skills: ["React", "JavaScript", "HTML", "CSS"],
     ghlink:"https://github.com/renzocanare/portfolio-website",
