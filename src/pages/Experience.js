@@ -36,11 +36,11 @@ function Experience() {
             </p>
             <p>
               <hr/>
+              <span className="skill-bubble">C++</span>
+              <span className="skill-bubble">Qt QML</span>              
               <span className="skill-bubble">Python</span>
               <span className="skill-bubble">Flask</span>
               <span className="skill-bubble">Bootstrap</span>
-              <span className="skill-bubble">C++</span>
-              <span className="skill-bubble">Qt QML</span>
               <span className="skill-bubble">GitHub</span>
               <span className="skill-bubble">Jira</span>
             </p>
