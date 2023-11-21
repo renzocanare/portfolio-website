@@ -70,15 +70,30 @@
 }
 
 .back-content {
+    position: fixed;
+    top: 15px;
     font-size: 12px;
     margin: 15px;
+
 }
 
 .certificate-link {
-    margin-bottom: 10px;
+    position: fixed;
+    bottom: 10px;
     padding: 10px;
     background-color: rgba(102, 99, 99, 0.253);
     color: #000000;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 10px;
+}
+
+.no-certificate {
+    position: fixed;
+    bottom: 10px;
+    padding: 10px;
+    background-color: rgba(102, 99, 99, 0.253);
+    color: rgb(153, 153, 153);
     text-decoration: none;
     border-radius: 3px;
     font-size: 10px;
@@ -94,4 +109,5 @@
     .flip-card {
         width: 120px;
     }
+
 }

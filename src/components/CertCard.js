@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/CertCard.css';
 
-function CertCard({ frontContent, backContent, linkToCertificate, description, backgroundColor }) {
+function CertCard({ frontContent, backContent, linkToCertificate, certReady, description, backgroundColor }) {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleFlip = () => {
@@ -26,7 +26,11 @@ function CertCard({ frontContent, backContent, linkToCertificate, description, b
         </div>
         <div className="flip-card-back" style={cardStyle}>
           <div className='back-content'>{backContent}</div>
-          <a href={linkToCertificate} target="_blank" rel="noreferrer" className="certificate-link">VIEW CERTIFICATE</a>
+          {certReady == true
+            ? <a href={linkToCertificate} target="_blank" rel="noreferrer" className="certificate-link">VIEW CERTIFICATE</a>
+            : <div className='no-certificate'>NOT READY</div>
+          }
+          
         </div>
       </div>
     </div>
