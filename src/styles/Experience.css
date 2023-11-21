@@ -5,7 +5,7 @@
 .timeline-header {
   width: 100%;
   text-align: center;
-  color: #000000;
+  color: #272727;
 }
 
 .sub-header {
@@ -19,7 +19,6 @@
   border-radius: 50%;
 }
 
-
 .skill-bubble {
   display: inline-block;
   background-color: rgb(128, 124, 124);
@@ -29,6 +28,7 @@
   border-radius: 10px;
   font-size: 14px;
   text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 @media only screen and (max-width: 1300px) {
