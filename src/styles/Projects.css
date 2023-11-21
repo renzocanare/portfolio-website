@@ -1,70 +1,267 @@
 .projects {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-family: 'Noto Sans Mono';
-  }
-  .projects .projectTitle {
-    text-align: center;
-    color: #3e497a;
-    font-size: 60px;
-    font-weight: bolder;
-  }
-  
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Noto Sans Mono';
+}
+
+.projects h1 {
+  align-items: center;
+  text-align: center;
+}
+
+.projects .projectTitle {
+  text-align: center;
+  color: #3e497a;
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+.projectList {
+  width: 100%;
+  align-items: center;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  /* Adjust column size */
+  gap: 40px;
+  /* Spacing between project items */
+  justify-content: center;
+  padding: 20px;
+  /* Padding around the grid */
+  box-sizing: border-box;
+}
+
+.projectItem {
+  height: 500px;
+  border-radius: 15px;
+  background-color: rgb(221, 221, 221);
+  width: 300px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.project-image {
+  height: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-image:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-description {
+  padding: 10px;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.project-title {
+  font-size: 20px;
+  margin-bottom: 0px;
+  font-weight: bolder;
+}
+
+.project-status {
+  margin-top: 1px;
+  font-size: 15px;
+}
+
+.project-desc-short {
+  margin-top: 15px;
+}
+
+.project-skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: center;
+  margin: 5px;
+  width: 250px;
+}
+
+.ghlink-available {
+  gap: 20px;
+}
+
+.ghlink-unavailable {
+  gap: 20px;
+}
+
+.project-more-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  padding: 10px;
+  background-color: rgba(102, 99, 99, 0.253);
+  color: #000000;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 13px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-more-button:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.project-GitHub-button-avail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  bottom: 10px;
+  padding: 10px;
+  background-color: rgba(102, 99, 99, 0.253);
+  color: #000000;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 13px;
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.project-GitHub-button-avail:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.project-GitHub-button-unavail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  bottom: 10px;
+  padding: 10px;
+  background-color: rgba(102, 99, 99, 0.253);
+  color: #000000;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 13px;
+  cursor: default;
+}
+
+.project-GitHub-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.project-skill-bubble {
+  display: inline-block;
+  background-color: rgb(128, 124, 124);
+  color: white;
+  padding: 2px 6px;
+  margin: 5px;
+  border-radius: 10px;
+  font-size: 12px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+}
+
+.modal-close {
+  float: right;
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+}
+
+.modal-project-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: center;
+  margin: 5px;
+}
+
+.modal-project-GitHub-button-avail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: auto;
+  bottom: 10px;
+  padding: 10px;
+  background-color: rgba(102, 99, 99, 0.253);
+  color: #000000;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.modal-project-GitHub-button-avail:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.modal-project-GitHub-button-unavail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: auto;
+  bottom: 10px;
+  padding: 10px;
+  background-color: rgba(102, 99, 99, 0.253);
+  color: #000000;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 15px;
+  cursor: default;
+}
+
+/* Responsive grid changes */
+@media only screen and (max-width: 800px) {
   .projectList {
-    width: 70vw;
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  /* MENU ITEM STYLING */
-  
-  .projectItem {
-    border-radius: 15px;
-    width: 300px;
-    height: 300px;
-    margin: 40px;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-    text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+  .projectList {
+    grid-template-columns: 1fr;
+    width: 80%;
+    /* Adjust width for smaller screens */
   }
-  .projectItem:hover {
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
-    transition: 0.3s ease-in;
-    cursor: pointer;
-  }
-  
-  .projectItem .bgImage {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    width: 100%;
-    height: 200px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  .projectItem h1 {
-    font-size: 25px;
-  }
-  
-  @media only screen and (max-width: 1300px) {
-    .projectList {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-  
-  @media only screen and (max-width: 800px) {
-    .projectList {
-      width: 100%;
-      grid-template-columns: 1fr;
-    }
-    .projectItem {
-      width: 300px;
-      height: 300px;
-    }
-  }
+}

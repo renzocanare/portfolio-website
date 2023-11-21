@@ -1,17 +1,49 @@
 import React from "react";
 import ProjectItem from "../components/ProjectItem";
-import { ProjectList } from "../helpers/ProjectList";
+import { PersonalProjectList, SchoolProjectList } from "../helpers/ProjectList";
 
 import "../styles/Projects.css";
 
 function Projects() {
   return (
     <div className="projects">
-      <h1> My Personal Projects</h1>
+      <h1>My Personal Projects_</h1>
       <div className="projectList">
-        {ProjectList.map((project, idx) => {
+        {PersonalProjectList.map((project, idx) => {
           return (
-            <ProjectItem id={idx} name={project.name} image={project.image} />
+            <ProjectItem
+              key={idx}
+              id={idx}
+              image={project.image}
+              name={project.name}
+              status={project.status}
+              shortdesc={project.shortdesc}
+              longdesc={project.longdesc}
+              skills={project.skills}
+              ghlink={project.ghlink}
+              ghlinkavail={project.ghlinkavail}
+              ghlinkreason={project.ghlinkreason}
+            />
+          );
+        })}
+      </div>
+      <h1>NUS Student Projects_</h1>
+      <div className="projectList">
+        {SchoolProjectList.map((project, idx) => {
+          return (
+            <ProjectItem
+              key={idx}
+              id={idx}
+              image={project.image}
+              name={project.name}
+              status={project.status}
+              shortdesc={project.shortdesc}
+              longdesc={project.longdesc}
+              skills={project.skills}
+              ghlink={project.ghlink}
+              ghlinkavail={project.ghlinkavail}
+              ghlinkreason={project.ghlinkreason}
+            />
           );
         })}
       </div>
