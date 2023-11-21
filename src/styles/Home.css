@@ -140,6 +140,15 @@
 .certifications-container {
   display: grid;
   height: auto;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  align-items: center;
+}
+
+.classes-container {
+  display: grid;
+  height: auto;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 20px;
   padding: 20px;

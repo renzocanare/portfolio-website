@@ -98,7 +98,7 @@ function Home() {
               })}
           </div>
           <h2>Relevant Modules Taken at NUS_</h2>
-          <div className="certifications-container">
+          <div className="classes-container">
             <CarouselComponent/>
           </div>
         </div>
