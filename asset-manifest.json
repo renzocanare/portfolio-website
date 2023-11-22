@@ -1,13 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.3a6241b7.css",
-    "main.js": "/static/js/main.4defe19f.js",
+    "main.js": "/static/js/main.70f6e08e.js",
     "static/js/787.861fdc3f.chunk.js": "/static/js/787.861fdc3f.chunk.js",
     "static/media/ee4211-banner.gif": "/static/media/ee4211-banner.c99abd30299703224250.gif",
     "static/media/cg4002-banner.png": "/static/media/cg4002-banner.0e81ce95b6b47cc9a627.png",
     "static/media/profile-image-fun.jpg": "/static/media/profile-image-fun.ec40bc18b4937bc9e7bc.jpg",
+    "static/media/mtg-banner.png": "/static/media/mtg-banner.12f7eb98ac0cb3826a89.png",
     "static/media/sbat-banner.png": "/static/media/sbat-banner.3cb3611675415d376c99.png",
     "static/media/portfolio-banner.png": "/static/media/portfolio-banner.fa0d81cecc7dd9cd5445.png",
+    "static/media/cg3207-banner.png": "/static/media/cg3207-banner.c11400a940942b17110a.png",
     "static/media/cs2113t-banner.png": "/static/media/cs2113t-banner.c54d9f1dc16c1bfa16c4.png",
     "static/media/evone-logo.png": "/static/media/evone-logo.0728eef08a229bc7dac4.png",
     "static/media/cjc-logo.jpg": "/static/media/cjc-logo.951cbdd942f9f8d0e145.jpg",
@@ -23,11 +25,11 @@
     "static/media/scoll-button.svg": "/static/media/scoll-button.923f59d346fa7e9b7bcf5a9394b39b1c.svg",
     "index.html": "/index.html",
     "main.3a6241b7.css.map": "/static/css/main.3a6241b7.css.map",
-    "main.4defe19f.js.map": "/static/js/main.4defe19f.js.map",
+    "main.70f6e08e.js.map": "/static/js/main.70f6e08e.js.map",
     "787.861fdc3f.chunk.js.map": "/static/js/787.861fdc3f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3a6241b7.css",
-    "static/js/main.4defe19f.js"
+    "static/js/main.70f6e08e.js"
   ]
 }
