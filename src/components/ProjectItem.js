@@ -6,11 +6,15 @@ function ProjectItem({ image, name, status, shortdesc, skills, ghlink, ghlinkava
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const openModal = (event) => {
-    event.stopPropagation(); 
+    event.stopPropagation();
     setModalIsOpen(true);
+    document.body.style.overflow = 'hidden';
   };
 
-  const closeModal = () => setModalIsOpen(false);
+  const closeModal = () => {
+    setModalIsOpen(false);
+    document.body.style.overflow = 'auto';
+  };
 
   const project = { image, name, status, shortdesc, skills, ghlink, ghlinkavail, ghlinkreason, longdesc };
 
