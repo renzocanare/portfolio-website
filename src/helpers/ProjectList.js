@@ -1,10 +1,23 @@
+import MTGBanner from "../assets/mtg-banner.png";
 import PortfolioBanner from "../assets/portfolio-banner.png";
 import SBATBanner from "../assets/sbat-banner.png"
 import EE4211Banner from "../assets/ee4211-banner.gif"
+import CG3207Banner from "../assets/cg3207-banner.png"
 import CG4002Banner from "../assets/cg4002-banner.png"
 import CS2113TBanner from "../assets/cs2113t-banner.png"
 
 export const PersonalProjectList = [
+  {
+    image: MTGBanner,
+    name: "Magic: The Gathering Card Price Comparison",
+    status: "Starting in Dec 2023",
+    shortdesc: "A website that allows users to compare card prices between MTG hobby shops in Singapore. ",
+    longdesc: "This is a long description inside the modal.",
+    skills: ["MongoDB", "Express.js", "React.js", "Node.js"],
+    ghlink:"",
+    ghlinkavail: false,
+    ghlinkreason: "Coming Soon"
+  },
   {
     image: PortfolioBanner,
     name: "Portfolio Website",
@@ -40,6 +53,17 @@ export const SchoolProjectList = [
     ghlink:"",
     ghlinkavail: false,
     ghlinkreason: "Coming Soon"
+  },
+  {
+    image: CG3207Banner,
+    name: "CG3207 Computer Architecture",
+    status: "Completed Semester 1 AY23/24",
+    shortdesc: "Single-cycle processor that supports all basic ARM DP/Mem/Branch instructions with additional optimizations.",
+    longdesc: "This is a long description inside the modal.",
+    skills: ["Verilog", "ARM", "Vivado", "Hardware Design" ],
+    ghlink:"",
+    ghlinkavail: false,
+    ghlinkreason: "Private"
   },
   {
     image: CG4002Banner,
