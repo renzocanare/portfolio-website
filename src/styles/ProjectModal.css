@@ -33,45 +33,13 @@
 
 .modalImage {
     max-width: 100%;
-    /* Ensure the image is responsive and fits within the modal */
     height: auto;
-    /* Maintain aspect ratio */
     border-radius: 5px;
-    /* Optional: if you want rounded corners */
     margin-bottom: 20px;
-    /* Space below the image */
 }
 
 .modalContent .skills {
     display: flex;
     flex-wrap: wrap;
     margin: 10px 0;
-}
-
-.skills .skillBubble {
-    background-color: #007bff;
-    color: white;
-    padding: 5px 10px;
-    margin: 5px;
-    border-radius: 15px;
-    font-size: 0.9rem;
-}
-
-.githubButton {
-    background-color: #28a745;
-    color: white;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 15px;
-}
-
-.githubUnavailable {
-    background-color: #dc3545;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 15px;
 }
