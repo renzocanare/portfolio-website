@@ -32,7 +32,7 @@ export const ClassesList = [
   {
     title: "EE4204 Computer Networks",
     semester: "Aug 2022 (AY 22/23)",
-    description: "Covers topics including network requirements, architecture, protocol stack models, Wireless, bridges, switching and routing in IP and ATM networks, and internetworking. Implementation in analyzing and designing networking protocols through mini-projects.",
+    description: "Covers topics including network requirements, architecture, protocol stack models, Wireless, bridges, switching and routing in IP and ATM networks, internetworking. Implementation in analyzing and designing networking protocols through mini-projects.",
     skills: ["Computer Networking", "C Programming"]
   },
   {
@@ -44,7 +44,7 @@ export const ClassesList = [
   {
     title: "CG2271 Real-Time Operating Systems",
     semester: "Jan 2022 (AY 21/22)",
-    description: "Exposed to basic RTOS concepts like tasks, scheduling algorithms, RTOS customisation and concurrent real-time programming.The student will not only understand how an RTOS is built, but will also gain practical experience in customising RTOSs and in writing real-time programs.",
+    description: "Exposed to basic RTOS concepts like tasks, scheduling algorithms, RTOS customisation and concurrent real-time programming. The student will not only understand how an RTOS is built, but will also gain practical experience in customising RTOSs and in writing real-time programs.",
     skills: ["Bare Metal Programming", "Arduino"]
   },
   {
