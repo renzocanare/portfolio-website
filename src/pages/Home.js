@@ -97,7 +97,7 @@ function Home() {
                 );
               })}
           </div>
-          <h2>Relevant Modules Taken at NUS_</h2>
+          <h2>Relevant Courses Taken at NUS_</h2>
           <div className="classes-container">
             <CarouselComponent/>
           </div>
