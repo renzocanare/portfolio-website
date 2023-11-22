@@ -55,12 +55,12 @@ function Home() {
               My name is <b>Renzo Rivera Canare</b>, a Final Year Computer Engineering student at the National University of Singapore (NUS).
             </p>
             <p>
-              Since young, I've always been fascinated about computers and especially on how Hardware is designed.
-              Coupled with a newfound interest in Machine Learning, I hope to be able explore how I can put
+              I've always been fascinated about computers and especially on how Hardware is designed.
+              Coupled with a deep interest in Machine Learning, I hope to be able explore how I can put
               both of these things together.
             </p>
             <p>
-              I also enjoy appyling these Machine Learning algorithms
+              I enjoy appyling these Machine Learning algorithms
               to make sense of large datasets, or use it to <s>predict the future</s> make good guesses on things.
             </p>
             <p>
