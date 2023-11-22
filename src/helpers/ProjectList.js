@@ -59,8 +59,8 @@ export const SchoolProjectList = [
     shortdesc: "A CLI application that helps restaurant hawkers and owners to keep track of their food resources.",
     longdesc: "This is a long description inside the modal.",
     skills: ["Java", "Software Engineering", "Agile Programming"],
-    ghlink:"",
+    ghlink:"https://github.com/renzocanare/CS2113T-Team-Project",
     ghlinkavail: true,
-    ghlinkreason: "Coming Soon"
+    ghlinkreason: ""
   },
 ];
