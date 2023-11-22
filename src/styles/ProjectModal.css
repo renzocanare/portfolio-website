@@ -12,7 +12,7 @@
 }
 
 .modalContent {
-    background: white;
+    background: rgb(221, 221, 221);
     padding: 20px;
     border-radius: 10px;
     position: relative;
@@ -22,14 +22,15 @@
 
 .modalCloseButton {
     position: absolute;
+    background-color: rgb(175, 173, 173);
     top: 10px;
     right: 10px;
-    border: none;
-    background: none;
+    border-width: 0px;
+    border-radius: 5px;
+    border-color: transparent;
     font-size: 1.5rem;
     cursor: pointer;
 }
-
 
 .modalImage {
     max-width: 100%;

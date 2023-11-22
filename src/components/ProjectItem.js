@@ -5,15 +5,12 @@ import GithubIcon from "@mui/icons-material/GitHub";
 function ProjectItem({ image, name, status, shortdesc, skills, ghlink, ghlinkavail, ghlinkreason, longdesc }) {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
-  const openModal = (event) => {
-    event.stopPropagation();
+  const openModal = () => {
     setModalIsOpen(true);
-    document.body.style.overflow = 'hidden';
   };
 
   const closeModal = () => {
     setModalIsOpen(false);
-    document.body.style.overflow = 'auto';
   };
 
   const project = { image, name, status, shortdesc, skills, ghlink, ghlinkavail, ghlinkreason, longdesc };
