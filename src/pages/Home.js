@@ -38,7 +38,7 @@ function Home() {
             <p>Hardware & Software Engineering, Machine Learning.</p>
           </div>
           <div className="media">
-            <a href="https://www.linkedin.com/in/renzo-canare/" target="_blank" rel="noreferrer" title="View My LinkedIn Page" alt="Linkedin">
+            <a href="https://www.linkedin.com/in/renzo-canare/" target="_blank" rel="noreferrer" title="View My LinkedIn Profile" alt="Linkedin">
               <LinkedInIcon />
             </a>
             <a href="mailto:renzo_canare@hotmail.com" alt="Email address" title="Send Me an Email">
