@@ -9,13 +9,14 @@ function CarouselComponent() {
   const settings = {
     dots: true,
     infinite: true,
+    lazyLoad: true, 
     adaptiveHeight: true,
     autoplay: true,
     autoplaySpeed: 6000,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 3,
-    pauseOnHover: true, 
+    pauseOnHover: true,
     responsive: [
       {
         breakpoint: 1024,
@@ -39,8 +40,9 @@ function CarouselComponent() {
 
   return (
     <Slider {...settings}>
-      {ClassesList.map((course) => (
+      {ClassesList.map((course, idx) => (
         <ClassesCard
+        key={idx}
         title={course.title}
         semester={course.semester}
         description={course.description}

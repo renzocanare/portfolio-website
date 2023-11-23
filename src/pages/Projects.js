@@ -1,13 +1,15 @@
 import React from "react";
 import ProjectItem from "../components/ProjectItem";
 import { PersonalProjectList, SchoolProjectList } from "../helpers/ProjectList";
-
+import Fade from "react-reveal/Fade";
 import "../styles/Projects.css";
 
 function Projects() {
   return (
     <div className="projects">
-      <h1>My Personal Projects_</h1>
+      <Fade>
+        <h1>My Personal Projects_</h1>
+      </Fade>
       <div className="projectList">
         {PersonalProjectList.map((project, idx) => {
           return (
@@ -27,7 +29,9 @@ function Projects() {
           );
         })}
       </div>
-      <h1>NUS Student Projects_</h1>
+      <Fade>
+        <h1>NUS Student Projects_</h1>
+      </Fade>
       <div className="projectList">
         {SchoolProjectList.map((project, idx) => {
           return (

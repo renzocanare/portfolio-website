@@ -1,32 +1,18 @@
-import React, { useEffect, useState } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import React from "react";
+import { NavLink} from "react-router-dom";
 import "../styles/Navbar.css";
-import ReorderIcon from "@mui/icons-material/Reorder";
+import Fade from "react-reveal/Fade";
 
 function Navbar() {
-  const [expandNavbar, setExpandNavbar] = useState(false);
-  const location = useLocation();
-
-  useEffect(() => {
-    setExpandNavbar(false);
-  }, [location]);
-
   return (
-    <div className="navbar" id={expandNavbar ? "open" : "close"}>
-      <div className="toggleButton">
-        <button
-          onClick={() => {
-            setExpandNavbar((prev) => !prev);
-          }}
-        >
-          <ReorderIcon />
-        </button>
-      </div>
+    <div className="navbar">
+      <Fade top>
       <div className="links">
-        <NavLink exact to="/" activeClassName="active"> Home </NavLink>
-        <NavLink to="/projects" activeClassName="active"> Projects </NavLink>
-        <NavLink to="/experience" activeClassName="active"> Experience </NavLink>
+        <NavLink to="/" activeclassname="active"> Home </NavLink>
+        <NavLink to="/projects" activeclassname="active"> Projects </NavLink>
+        <NavLink to="/experience" activeclassname="active"> Experience </NavLink>
       </div>
+      </Fade>
     </div>
   );
 }

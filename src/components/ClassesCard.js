@@ -9,8 +9,8 @@ const ClassesCard = ({ title, semester, description, skills }) => {
       <p className="course-description">{description}</p>
       <hr/>
       <div className="skill-bubbles">
-        {skills.map((skill) => (
-          <span className="skill-bubble">
+        {skills.map((skill, idx) => (
+          <span className="skill-bubble" key={idx}>
             {skill}
           </span>
         ))}
