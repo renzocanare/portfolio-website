@@ -1,10 +1,10 @@
-import MTGBanner from "../assets/mtg-banner.png";
-import PortfolioBanner from "../assets/portfolio-banner.png";
-import SBATBanner from "../assets/sbat-banner.png"
-import EE4211Banner from "../assets/ee4211-banner.gif"
-import CG3207Banner from "../assets/cg3207-banner.png"
-import CG4002Banner from "../assets/cg4002-banner.png"
-import CS2113TBanner from "../assets/cs2113t-banner.png"
+import MTGBanner from "../assets/projects/mtg-banner.png";
+import PortfolioBanner from "../assets/projects/portfolio-banner.png";
+import SBATBanner from "../assets/projects/sbat-banner.png"
+import EE4211Banner from "../assets/projects/ee4211-banner.gif"
+import CG3207Banner from "../assets/projects/cg3207-banner.png"
+import CG4002Banner from "../assets/projects/cg4002-banner.png"
+import CS2113TBanner from "../assets/projects/cs2113t-banner.png"
 
 export const PersonalProjectList = [
   {
@@ -19,17 +19,6 @@ export const PersonalProjectList = [
     ghlinkreason: "Coming Soon"
   },
   {
-    image: PortfolioBanner,
-    name: "Portfolio Website",
-    status: "In Progress",
-    shortdesc: "A React.js website to showcase my work - this website!",
-    longdesc: "This is a long description inside the modal.",
-    skills: ["JavaScript", "HTML", "CSS", "React.js", "Node.js"],
-    ghlink:"https://github.com/renzocanare/portfolio-website",
-    ghlinkavail: true,
-    ghlinkreason: ""
-  },
-  {
     image: SBATBanner,
     name: "Sentiment-based Algorithmic Trading",
     status: "Paused (to study for school)",
@@ -39,6 +28,17 @@ export const PersonalProjectList = [
     ghlink:"",
     ghlinkavail: false,
     ghlinkreason: "Private"
+  },
+  {
+    image: PortfolioBanner,
+    name: "Portfolio Website",
+    status: "Completed",
+    shortdesc: "A React.js website to showcase my work - this website!",
+    longdesc: "This is a long description inside the modal.",
+    skills: ["JavaScript", "HTML", "CSS", "React.js", "Node.js"],
+    ghlink:"https://github.com/renzocanare/portfolio-website",
+    ghlinkavail: true,
+    ghlinkreason: ""
   },
 ];
 

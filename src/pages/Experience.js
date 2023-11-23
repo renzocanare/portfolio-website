@@ -2,12 +2,12 @@ import React from "react";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import Fade from "react-reveal/Fade";
 import "react-vertical-timeline-component/style.min.css";
-import HPLogo from "../assets/hp-logo.png";
-import EVOneLogo from "../assets/evone-logo.png";
-import NUSLogo from "../assets/nus-logo.png";
-import CJCLogo from "../assets/cjc-logo.jpg";
-import SPSLogo from "../assets/sps-logo.png";
-import DLSLogo from "../assets/dls-logo.png";
+import HPLogo from "../assets/experience/hp-logo.png";
+import EVOneLogo from "../assets/experience/evone-logo.png";
+import NUSLogo from "../assets/experience/nus-logo.png";
+import CJCLogo from "../assets/experience/cjc-logo.jpg";
+import SPSLogo from "../assets/experience/sps-logo.png";
+import DLSLogo from "../assets/experience/dls-logo.png";
 import "../styles/Experience.css";
 
 function Experience() {
