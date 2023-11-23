@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import ClassesCard from "./ClassesCard"; 
-import { ClassesList } from "../helpers/ClassesList"; 
+import { ClassesList } from "../helpers/CoursesList"; 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
