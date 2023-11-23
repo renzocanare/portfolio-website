@@ -14,7 +14,7 @@ const ProjectModal = ({ isOpen, closeModal, project }) => {
       <div className="modalOverlay">
         <FocusOn onEscapeKey={closeModal} onClickOutside={closeModal}>
           <div className="modalContent">
-            <button className="modalCloseButton" onClick={closeModal}>&times;</button>
+            <button className="modalCloseButton" onClick={closeModal} title="Close Pop-up">&times;</button>
             <img src={project.image} alt={project.name} className="modalImage" />
             <div className="project-description">
               <div className="project-title">{project.name}</div>
@@ -22,9 +22,9 @@ const ProjectModal = ({ isOpen, closeModal, project }) => {
               <div className="project-desc-short">{project.longdesc}</div>
               <span className={`modal-project-buttons ${project.ghlinkavail ? 'ghlink-available' : 'ghlink-unavailable'}`}>
                 {project.ghlinkavail ? (
-                  <a href={project.ghlink} target="_blank" rel="noreferrer" className="modal-project-GitHub-button-avail"><GithubIcon />&nbsp;Go to GitHub Repo</a>
+                  <a href={project.ghlink} target="_blank" rel="noreferrer" className="modal-project-GitHub-button-avail" title="View GitHub Repo" alt="GitHub"><GithubIcon />&nbsp;Go to GitHub Repo</a>
                 ) : (
-                  <div className="modal-project-GitHub-button-unavail"><GithubIcon />&nbsp;GitHub Repo is currently {project.ghlinkreason}</div>
+                  <div className="modal-project-GitHub-button-unavail" title={project.ghlinkreason}><GithubIcon />&nbsp;GitHub Repo is currently {project.ghlinkreason}</div>
                 )}
               </span>
               <hr />

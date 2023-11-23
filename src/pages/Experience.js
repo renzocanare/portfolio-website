@@ -99,7 +99,7 @@ function Experience() {
               <p>
                 <li>Proficiency in C, C++, C#, Java and Python</li>
                 <li>Interest in Hardware Design and Software Engineering for Machine Learning and Data Science</li>
-                <li>List of Projects: <a href="/projects" target="_blank">rivera.fun/projects</a></li>
+                <li>List of Projects: <a href="/projects" target="_blank" title="View Projects Page" alt="Projects list">rivera.fun/projects</a></li>
               </p>
             </div>
             <hr />

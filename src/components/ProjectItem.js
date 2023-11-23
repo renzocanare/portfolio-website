@@ -25,11 +25,11 @@ function ProjectItem({ image, name, status, shortdesc, skills, ghlink, ghlinkava
           <div className="project-status">{status}</div>
           <div className="project-desc-short">{shortdesc}</div>
           <span className={`project-buttons ${ghlinkavail ? 'ghlink-available' : 'ghlink-unavailable'}`}>
-            <div onClick={openModal} className="project-more-button">Read More</div>
+            <div onClick={openModal} className="project-more-button" title="Read More">Read More</div>
             {ghlinkavail ? (
-              <a href={ghlink} target="_blank" rel="noreferrer" className="project-GitHub-button-avail"><GithubIcon />&nbsp;GitHub</a>
+              <a href={ghlink} target="_blank" rel="noreferrer" className="project-GitHub-button-avail" title="View GitHub Repo" alt="GitHub"><GithubIcon />&nbsp;GitHub</a>
             ) : (
-              <div className="project-GitHub-button-unavail"><GithubIcon />&nbsp;{ghlinkreason}</div>
+              <div className="project-GitHub-button-unavail" title={ghlinkreason}><GithubIcon />&nbsp;{ghlinkreason}</div>
             )}
           </span>
           <hr />

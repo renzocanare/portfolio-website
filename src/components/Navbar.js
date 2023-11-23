@@ -8,9 +8,9 @@ function Navbar() {
     <div className="navbar">
       <Fade top>
       <div className="links">
-        <NavLink to="/" activeclassname="active"> Home </NavLink>
-        <NavLink to="/projects" activeclassname="active"> Projects </NavLink>
-        <NavLink to="/experience" activeclassname="active"> Experience </NavLink>
+        <NavLink to="/" activeclassname="active" title="Home"> Home </NavLink>
+        <NavLink to="/projects" activeclassname="active" title="Projects"> Projects </NavLink>
+        <NavLink to="/experience" activeclassname="active" title="Experience"> Experience </NavLink>
       </div>
       </Fade>
     </div>

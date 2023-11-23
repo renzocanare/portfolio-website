@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ReactComponent as NiceButton} from '../assets/scoll-button.svg'
+import { ReactComponent as NiceButton } from '../assets/scoll-button.svg'
 import { Button } from '../styles/ScrollButton';
 import Fade from "react-reveal/Fade";
 
@@ -32,7 +32,7 @@ const ScrollButton = () => {
   }, []);
 
   return (
-    <Button onClick={scrollToTop} style={{ display: visible ? 'inline' : 'none' }}>
+    <Button onClick={scrollToTop} style={{ display: visible ? 'inline' : 'none' }} title="Go to Top">
       <Fade duration={500}>
         <NiceButton width="25" height="25" />
       </Fade>
