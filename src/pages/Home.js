@@ -13,7 +13,7 @@ import ProfileImageFun from "../assets/profile-image-fun.jpg";
 import DynamicText from "../components/DynamicText";
 import CertCard from "../components/CertCard";
 import { CertList } from "../helpers/CertificationsList";
-import CarouselComponent from "../components/CarouselClasses";
+import CarouselComponent from "../components/CoursesCarousel";
 
 import "../styles/Home.css";
 
