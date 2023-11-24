@@ -94,6 +94,7 @@ function Experience() {
             <h4 className="vertical-timeline-element-subtitle">
               B.Eng. Computer Engineering (Hons.)
             </h4>
+            <br/>
             <div>
               <h4 className="sub-header">Academics</h4>
               <p>
