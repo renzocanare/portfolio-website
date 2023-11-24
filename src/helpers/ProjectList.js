@@ -5,6 +5,7 @@ import EE4211Banner from "../assets/projects/ee4211-banner.gif"
 import CG3207Banner from "../assets/projects/cg3207-banner.png"
 import CG4002Banner from "../assets/projects/cg4002-banner.png"
 import CS3241Banner from "../assets/projects/cs3241-banner.png"
+import EE4204Banner from "../assets/projects/ee4204-banner.png"
 import CS2113TBanner from "../assets/projects/cs2113t-banner.png"
 
 export const PersonalProjectList = [
@@ -129,6 +130,19 @@ export const SchoolProjectList = [
                 </p>",
     skills: ["C++ Programming", "OpenGL/GLUT", "Computer Graphics"],
     ghlink:"https://github.com/renzocanare/nus-renzocanare/tree/main/CS3241",
+    ghlinkavail: true,
+    ghlinkreason: ""
+  },
+  {
+    image: EE4204Banner,
+    name: "EE4204 Computer Networks",
+    status: "Completed Semester 1 AY22/23",
+    shortdesc: "Implementation of simple UDP/TCP client-server socket programs for message transfer.",
+    longdesc: " <p>\
+                  This course explored the fundamentals of programming in computer graphics, the Mathematics behind it and culminated with a final lab project that utilized the Whitted Ray Tracing algorithm to demonstrate how Raytracing works.\
+                </p>",
+    skills: [" Programming", "UDP/TCP", "Computer Networking"],
+    ghlink:"https://github.com/renzocanare/nus-renzocanare/tree/main/EE4204",
     ghlinkavail: true,
     ghlinkreason: ""
   },
