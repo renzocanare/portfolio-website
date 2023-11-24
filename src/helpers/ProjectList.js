@@ -65,7 +65,7 @@ export const PersonalProjectList = [
     ghlink:"https://github.com/renzocanare/portfolio-website",
     ghlinkavail: true,
     ghlinkreason: "",
-    pinned: true
+    pinned: false
   },
 ];
 
@@ -154,7 +154,7 @@ export const SchoolProjectList= [
     shortdesc: "Implementation of simple UDP/TCP client-server socket programs for message transfer.",
     // eslint-disable-next-line
     longdesc: " <p>\
-                  This course explored the fundamentals of programming in computer graphics, the Mathematics behind it and culminated with a final lab project that utilized the Whitted Ray Tracing algorithm to demonstrate how Raytracing works.\
+                  This course explored the fundamentals of programming in computer graphics, the Mathematics behind it and culminated in a final lab project that utilized the Whitted Ray Tracing algorithm to demonstrate how Raytracing works.\
                 </p>",
     skills: [" Programming", "UDP/TCP", "Computer Networking"],
     ghlink:"https://github.com/renzocanare/nus-renzocanare/tree/main/EE4204",
