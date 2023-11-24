@@ -24,7 +24,8 @@ export const PersonalProjectList = [
     skills: ["Django", "Python"],
     ghlink:"",
     ghlinkavail: false,
-    ghlinkreason: "Coming Soon"
+    ghlinkreason: "Coming Soon",
+    pinned: false
   },
   {
     image: SBATBanner,
@@ -43,7 +44,8 @@ export const PersonalProjectList = [
     skills: ["Python", "Machine Learning", "NLP (spaCy)", "Doccano"],
     ghlink:"",
     ghlinkavail: false,
-    ghlinkreason: "Private"
+    ghlinkreason: "Private",
+    pinned: false
   },
   {
     image: PortfolioBanner,
@@ -59,11 +61,12 @@ export const PersonalProjectList = [
     skills: ["JavaScript", "HTML", "CSS", "React.js", "Node.js"],
     ghlink:"https://github.com/renzocanare/portfolio-website",
     ghlinkavail: true,
-    ghlinkreason: ""
+    ghlinkreason: "",
+    pinned: true
   },
 ];
 
-export const SchoolProjectList = [
+export const SchoolProjectListPinned = [
   {
     image: EE4211Banner,
     name: "EE4211 Data Science for the Internet of Things",
@@ -82,7 +85,8 @@ export const SchoolProjectList = [
     skills: ["Python", "SKLearn", "Pandas", "Machine Learning"],
     ghlink:"",
     ghlinkavail: false,
-    ghlinkreason: "Coming Soon"
+    ghlinkreason: "Coming Soon",
+    pinned: true
   },
   {
     image: CG3207Banner,
@@ -98,7 +102,8 @@ export const SchoolProjectList = [
     skills: ["Verilog", "ARM", "Vivado", "Hardware Design" ],
     ghlink:"",
     ghlinkavail: false,
-    ghlinkreason: "Private"
+    ghlinkreason: "Private",
+    pinned: true
   },
   {
     image: CG4002Banner,
@@ -118,8 +123,12 @@ export const SchoolProjectList = [
     skills: ["Unity AR", "C# Programming", "MQTT", "Python"],
     ghlink:"",
     ghlinkavail: false,
-    ghlinkreason: "Coming Soon"
+    ghlinkreason: "Coming Soon",
+    pinned: true
   },
+];
+
+export const SchoolProjectListMore = [
   {
     image: CS3241Banner,
     name: "CS3241 Computer Graphics",
@@ -131,7 +140,8 @@ export const SchoolProjectList = [
     skills: ["C++ Programming", "OpenGL/GLUT", "Computer Graphics"],
     ghlink:"https://github.com/renzocanare/nus-renzocanare/tree/main/CS3241",
     ghlinkavail: true,
-    ghlinkreason: ""
+    ghlinkreason: "",
+    pinned: false
   },
   {
     image: EE4204Banner,
@@ -144,7 +154,8 @@ export const SchoolProjectList = [
     skills: [" Programming", "UDP/TCP", "Computer Networking"],
     ghlink:"https://github.com/renzocanare/nus-renzocanare/tree/main/EE4204",
     ghlinkavail: true,
-    ghlinkreason: ""
+    ghlinkreason: "",
+    pinned: false
   },
   {
     image: CS2113TBanner,
@@ -163,6 +174,7 @@ export const SchoolProjectList = [
     skills: ["Java", "Software Engineering", "Agile Programming"],
     ghlink:"https://github.com/renzocanare/CS2113T-Team-Project",
     ghlinkavail: true,
-    ghlinkreason: ""
+    ghlinkreason: "",
+    pinned: false
   },
 ];

@@ -43,7 +43,23 @@
 
 }
 
+.project-image-container {
+  position: relative;
+  height: 150px;
+}
+
+.pinned-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px; 
+  color: rgba(255, 217, 0, 0.849); 
+  z-index: 999999999;
+  background-color: rgba(221, 221, 221, 0.205);
+  border-radius: 5px;
+}
+
 .project-image {
+  position: relative;
   height: 150px;
   background-position: center;
   background-repeat: no-repeat;
@@ -116,6 +132,27 @@
 }
 
 .project-more-button:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.projects-view-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  padding: 10px;
+  background-color: rgba(102, 99, 99, 0.253);
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.13);
+  color: #000000;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 18px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.projects-view-button:hover {
   transform: scale(1.1);
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
