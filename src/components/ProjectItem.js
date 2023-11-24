@@ -4,7 +4,7 @@ import GithubIcon from "@mui/icons-material/GitHub";
 import PinIcon from "@mui/icons-material/PushPin"; // Import an icon for pinned projects
 import Fade from "react-reveal/Fade";
 
-function ProjectItem({ image, name, status, shortdesc, skills, ghlink, ghlinkavail, ghlinkreason, longdesc, pinned }) {
+function ProjectItem({ image, name, status, shortdesc, skills, ghlink, ghlinkavail, ghlinkreason, longdesc, pinned, showmore, courseslist }) {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const transparentGif = "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==";
@@ -21,18 +21,24 @@ function ProjectItem({ image, name, status, shortdesc, skills, ghlink, ghlinkava
     if (pinned) {
       return <div className="pinned-icon" title="Pinned to Top"><PinIcon /></div>;
     } else {
-      return <img src={transparentGif} alt="" className="pinned-icon"/>;
+      return <img src={transparentGif} alt="" className="pinned-icon" />;
     }
   };
 
-  const project = { image, name, status, shortdesc, skills, ghlink, ghlinkavail, ghlinkreason, longdesc, pinned };
+  const shouldRenderItem = courseslist ? (showmore || pinned) : true;
+
+  if (!shouldRenderItem) {
+    return null; // Don't render the item if it doesn't meet the conditions
+  }
+
+  const project = { image, name, status, shortdesc, skills, ghlink, ghlinkavail, ghlinkreason, longdesc, pinned, showmore, courseslist };
 
   return (
     <div className="projectItem">
       <Fade>
         <div className="project-image-container">
           <div>{renderPinnedIcon()}</div>
-          <div className="project-image" style={{ backgroundImage: `url(${image})` }}/>
+          <div className="project-image" style={{ backgroundImage: `url(${image})` }} />
         </div>
         <div className="project-description">
           <div className="project-title">{name}</div>

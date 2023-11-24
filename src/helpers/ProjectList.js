@@ -69,7 +69,7 @@ export const PersonalProjectList = [
   },
 ];
 
-export const SchoolProjectListPinned = [
+export const SchoolProjectList= [
   {
     image: EE4211Banner,
     name: "EE4211 Data Science for the Internet of Things",
@@ -132,9 +132,6 @@ export const SchoolProjectListPinned = [
     ghlinkreason: "Coming Soon",
     pinned: true
   },
-];
-
-export const SchoolProjectListMore = [
   {
     image: CS3241Banner,
     name: "CS3241 Computer Graphics",

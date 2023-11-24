@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ProjectItem from "../components/ProjectItem";
-import { PersonalProjectList, SchoolProjectListPinned, SchoolProjectListMore } from "../helpers/ProjectList";
+import { PersonalProjectList, SchoolProjectList } from "../helpers/ProjectList";
 import Fade from "react-reveal/Fade";
 import "../styles/Projects.css";
 
@@ -32,15 +32,30 @@ function Projects() {
               ghlinkavail={project.ghlinkavail}
               ghlinkreason={project.ghlinkreason}
               pinned={project.pinned}
+              showmore={true}
+              courseslist={false}
             />
           );
         })}
       </div>
-      <Fade>
-        <h1>NUS Student Projects_</h1>
-      </Fade>
+      <div>
+        {
+          showSchoolProjects ?
+            <div>
+              <Fade>
+                <h1>All NUS Projects_</h1>
+              </Fade>
+            </div>
+            :
+            <div>
+              <Fade>
+                <h1>Pinned NUS Projects_</h1>
+              </Fade>
+            </div>
+        }
+      </div>
       <div className="projectList">
-        {SchoolProjectListPinned.map((project, idx) => {
+        {SchoolProjectList.map((project, idx) => {
           return (
             <ProjectItem
               key={idx}
@@ -55,33 +70,19 @@ function Projects() {
               ghlinkavail={project.ghlinkavail}
               ghlinkreason={project.ghlinkreason}
               pinned={project.pinned}
+              showmore={showSchoolProjects}
+              courseslist={true}
             />
           );
         })}
       </div>
-      <Fade>
-        <div onClick={toggleSchoolProjects} className="projects-view-button">{showSchoolProjects ? "View Less Projects" : "View Other Projects"}</div>
-      </Fade>
-      {showSchoolProjects && (<div className="projectList">
-        {SchoolProjectListMore.map((project, idx) => {
-          return (
-            <ProjectItem
-              key={idx}
-              id={idx}
-              image={project.image}
-              name={project.name}
-              status={project.status}
-              shortdesc={project.shortdesc}
-              longdesc={project.longdesc}
-              skills={project.skills}
-              ghlink={project.ghlink}
-              ghlinkavail={project.ghlinkavail}
-              ghlinkreason={project.ghlinkreason}
-              pinned={project.pinned}
-            />
-          );
-        })}
-      </div>)}
+      {!showSchoolProjects && (
+        <Fade>
+          <div onClick={toggleSchoolProjects} className="projects-view-button">
+            View All NUS Projects
+          </div>
+        </Fade>
+      )}
     </div>
   );
 }
