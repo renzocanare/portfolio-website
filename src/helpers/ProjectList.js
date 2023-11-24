@@ -14,6 +14,7 @@ export const PersonalProjectList = [
     name: "Magic: The Gathering Card Price Comparison",
     status: "Starting in Dec 2023",
     shortdesc: "A website that allows users to compare card prices between MTG hobby shops in Singapore. ",
+    // eslint-disable-next-line
     longdesc: " <p>\
                   The inspiration for this project came about when a friend and I spent over 3 hours comparing the prices of 100 individual cards across at least 6 different MTG hobby shops across Singapore.\
                 </p>\
@@ -32,6 +33,7 @@ export const PersonalProjectList = [
     name: "Sentiment-based Algorithmic Trading",
     status: "Paused (to study for school)",
     shortdesc: "Using sentiment from online articles to enter Crypto trading positions.",
+    // eslint-disable-next-line
     longdesc: " <p>\
                   A friend shared that he had an interesting Crypto trading algorithm that seemed to work for him, but remarked that it might possibly be better if he could enter his positions faster. \
                 </p>\
@@ -52,6 +54,7 @@ export const PersonalProjectList = [
     name: "Portfolio Website",
     status: "Completed",
     shortdesc: "A React.js website to showcase my work - this website!",
+    // eslint-disable-next-line
     longdesc: " <p>\
                   This website is my first attempt at Front-end Development with almost no prior experience; just a lot of Googling and learning from tutorials.\
                 </p>\
@@ -72,6 +75,7 @@ export const SchoolProjectListPinned = [
     name: "EE4211 Data Science for the Internet of Things",
     status: "Completed Semester 1 AY23/24",
     shortdesc: "Predicting carpark availability in Singapore based on historical data using various Machine Learning models.",
+    // eslint-disable-next-line
     longdesc: " <p>\
                   Working as a team of 4, we explored how various Machine Learning models could be applied to real world datasets.\
                 </p>\
@@ -93,6 +97,7 @@ export const SchoolProjectListPinned = [
     name: "CG3207 Computer Architecture",
     status: "Completed Semester 1 AY23/24",
     shortdesc: "Single-cycle processor that supports all basic ARM DP/Mem/Branch instructions with additional optimizations.",
+    // eslint-disable-next-line
     longdesc: " <p>\
                   Working as a team of 2, we developed a single-cycle processor using the concepts taught in this course.\
                 </p>\
@@ -110,6 +115,7 @@ export const SchoolProjectListPinned = [
     name: "CG4002 Computer Engineering Capstone",
     status: "Completed Semester 1 AY22/23",
     shortdesc: "Developed the Augmented Reality Visualizer component for our Laser Tag system using Unity AR.",
+    // eslint-disable-next-line
     longdesc: " <p>\
                   Working in a team of 5, I was the Visualizer Component Lead for my Computer Engineering Capstone Project.\
                 </p>\
@@ -134,6 +140,7 @@ export const SchoolProjectListMore = [
     name: "CS3241 Computer Graphics",
     status: "Completed Semester 1 AY22/23",
     shortdesc: "Implemented various computer graphics algorithms in simple 2D and 3D programs.",
+    // eslint-disable-next-line
     longdesc: " <p>\
                   This course explored the fundamentals of programming in computer graphics, the Mathematics behind it and culminated with a final lab project that utilized the Whitted Ray Tracing algorithm to demonstrate how Raytracing works.\
                 </p>",
@@ -148,6 +155,7 @@ export const SchoolProjectListMore = [
     name: "EE4204 Computer Networks",
     status: "Completed Semester 1 AY22/23",
     shortdesc: "Implementation of simple UDP/TCP client-server socket programs for message transfer.",
+    // eslint-disable-next-line
     longdesc: " <p>\
                   This course explored the fundamentals of programming in computer graphics, the Mathematics behind it and culminated with a final lab project that utilized the Whitted Ray Tracing algorithm to demonstrate how Raytracing works.\
                 </p>",
@@ -162,6 +170,7 @@ export const SchoolProjectListMore = [
     name: "CS2113T Software Engineering & OOP",
     status: "Completed Semester 1 AY21/22",
     shortdesc: "A CLI application that helps restaurant hawkers and owners to keep track of their food resources.",
+    // eslint-disable-next-line
     longdesc: " <p>\
                   Working in a team of 4, Food-O-Rama was our final project to demonstrate our understanding of Java, Object-Oriented Programming and working in an Agile environment.\
                 </p>\
