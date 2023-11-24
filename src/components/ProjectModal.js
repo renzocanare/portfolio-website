@@ -3,6 +3,7 @@ import '../styles/ProjectModal.css';
 import GithubIcon from "@mui/icons-material/GitHub";
 import { FocusOn } from 'react-focus-on';
 import Fade from "react-reveal/Fade";
+import parse from 'html-react-parser'
 
 const ProjectModal = ({ isOpen, closeModal, project }) => {
   if (!isOpen) {
@@ -19,7 +20,7 @@ const ProjectModal = ({ isOpen, closeModal, project }) => {
             <div className="project-description">
               <div className="project-title">{project.name}</div>
               <div className="project-status">{project.status}</div>
-              <div className="project-desc-short">{project.longdesc}</div>
+              <div className="project-desc-short">{parse(project.longdesc)}</div>
               <span className={`modal-project-buttons ${project.ghlinkavail ? 'ghlink-available' : 'ghlink-unavailable'}`}>
                 {project.ghlinkavail ? (
                   <a href={project.ghlink} target="_blank" rel="noreferrer" className="modal-project-GitHub-button-avail" title="View GitHub Repo" alt="GitHub"><GithubIcon />&nbsp;View GitHub Repo</a>
