@@ -3,6 +3,7 @@ import PortfolioBanner from "../assets/projects/portfolio-banner.png";
 import SBATBanner from "../assets/projects/sbat-banner.png"
 import EE4211Banner from "../assets/projects/ee4211-banner.gif"
 import CG3207Banner from "../assets/projects/cg3207-banner.png"
+import CS3243Banner from "../assets/projects/cs3243-banner.png"
 import CG4002Banner from "../assets/projects/cg4002-banner.png"
 import CS3241Banner from "../assets/projects/cs3241-banner.png"
 import EE4204Banner from "../assets/projects/ee4204-banner.png"
@@ -56,7 +57,7 @@ export const PersonalProjectList = [
     shortdesc: "A React.js website to showcase my work - this website!",
     // eslint-disable-next-line
     longdesc: " <p>\
-                  This website is my first attempt at Front-end Development with almost no prior experience; just a lot of Googling and learning from tutorials.\
+                  This website is my first attempt at proper Front-end Development with almost no prior experience; just a lot of Googling and learning from tutorials.\
                 </p>\
                 <p>\
                   I had a blast making it! 😊\
@@ -108,6 +109,29 @@ export const SchoolProjectList= [
     ghlink:"",
     ghlinkavail: false,
     ghlinkreason: "Private",
+    pinned: true
+  },
+  {
+    image: CS3243Banner,
+    name: "CS3243 Introduction to Artificial Intelligence",
+    status: "Completed Semester 1 AY23/24",
+    shortdesc: "Implemented various uninformed/informed search, CSPs and adversarial search algorithms to solve problems and develop AI agents.",
+    // eslint-disable-next-line
+    longdesc: " <p>\
+                  This course involved a series of individual projects that implemented:\
+                  <li>Uninformed Search: DFS, BFS, UCS</li>\
+                  <li>Informed Search: A* Search</li>\
+                  <li>Local Search: Hill-Climbing and its variations</li>\
+                  <li>Constraint Satisfaction Problems(CSPs): Variable/Value Order Heuristics, Forward Checking, AC-3</li>\
+                  <li>Adversarial Search: Minimax Play with Alpha-Beta Pruning and heuristics</li>\
+                </p>\
+                <p>\
+                  The mathematical theory behind other relevant topics such as Logical Agents and Bayesian Networks were also covered.\
+                </p>",
+    skills: ["Python", "Artificial Intelligence"],
+    ghlink:"",
+    ghlinkavail: false,
+    ghlinkreason: "Coming Soon",
     pinned: true
   },
   {
