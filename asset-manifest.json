@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.b750d0ed.css",
-    "main.js": "/static/js/main.0856b6b9.js",
+    "main.css": "/static/css/main.504bd0b5.css",
+    "main.js": "/static/js/main.1a9fd0b5.js",
     "static/js/787.861fdc3f.chunk.js": "/static/js/787.861fdc3f.chunk.js",
     "static/media/ee4211-banner.gif": "/static/media/ee4211-banner.c99abd30299703224250.gif",
     "static/media/cg4002-banner.png": "/static/media/cg4002-banner.0e81ce95b6b47cc9a627.png",
+    "static/media/cs3243-banner.png": "/static/media/cs3243-banner.ecede13f3e54ea512712.png",
     "static/media/profile-image-fun.jpg": "/static/media/profile-image-fun.ec40bc18b4937bc9e7bc.jpg",
     "static/media/cs3241-banner.png": "/static/media/cs3241-banner.0fd727ccb6b38813d008.png",
     "static/media/mtg-banner.png": "/static/media/mtg-banner.12f7eb98ac0cb3826a89.png",
@@ -26,12 +27,12 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "static/media/scoll-button.svg": "/static/media/scoll-button.923f59d346fa7e9b7bcf5a9394b39b1c.svg",
-    "main.b750d0ed.css.map": "/static/css/main.b750d0ed.css.map",
-    "main.0856b6b9.js.map": "/static/js/main.0856b6b9.js.map",
+    "main.504bd0b5.css.map": "/static/css/main.504bd0b5.css.map",
+    "main.1a9fd0b5.js.map": "/static/js/main.1a9fd0b5.js.map",
     "787.861fdc3f.chunk.js.map": "/static/js/787.861fdc3f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b750d0ed.css",
-    "static/js/main.0856b6b9.js"
+    "static/css/main.504bd0b5.css",
+    "static/js/main.1a9fd0b5.js"
   ]
 }
