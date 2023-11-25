@@ -124,7 +124,7 @@ export const SchoolProjectList= [
                   such as shooting, throwing grenades and using an energy shield (depending on the action of the player). The AR visualizer could also display important game information such ammo & grenade count and number of shields remaining.\
                 </p>\
                 <p>\
-                  MQTT was used to receive and relay live information between the game engine and our AR visualizer.\
+                  MQTT was used to relay live information between our game engine and the AR visualizer.\
                 </p>",
     skills: ["Unity AR", "C# Programming", "MQTT", "Python"],
     ghlink:"",
@@ -139,7 +139,7 @@ export const SchoolProjectList= [
     shortdesc: "Implemented various computer graphics algorithms in simple 2D and 3D programs.",
     // eslint-disable-next-line
     longdesc: " <p>\
-                  This course explored the fundamentals of programming in computer graphics, the Mathematics behind it and culminated with a final lab project that utilized the Whitted Ray Tracing algorithm to demonstrate how Raytracing works.\
+                  This course explored the fundamentals of programming in computer graphics, the Mathematics behind it and culminated in a final lab project that utilized the Whitted Ray Tracing algorithm to demonstrate how Ray Tracing is applied.\
                 </p>",
     skills: ["C++ Programming", "OpenGL/GLUT", "Computer Graphics"],
     ghlink:"https://github.com/renzocanare/nus-renzocanare/tree/main/CS3241",
@@ -154,9 +154,9 @@ export const SchoolProjectList= [
     shortdesc: "Implementation of simple UDP/TCP client-server socket programs for message transfer.",
     // eslint-disable-next-line
     longdesc: " <p>\
-                  This course explored the fundamentals of programming in computer graphics, the Mathematics behind it and culminated in a final lab project that utilized the Whitted Ray Tracing algorithm to demonstrate how Raytracing works.\
+                  This project involves developing various UDP and TCP client-server socket programs in C and explores how different versions of such protocols could be used to send short or long messages.\
                 </p>",
-    skills: [" Programming", "UDP/TCP", "Computer Networking"],
+    skills: ["C Programming", "UDP/TCP", "Computer Networking"],
     ghlink:"https://github.com/renzocanare/nus-renzocanare/tree/main/EE4204",
     ghlinkavail: true,
     ghlinkreason: "",
@@ -166,7 +166,7 @@ export const SchoolProjectList= [
     image: CS2113TBanner,
     name: "CS2113T Software Engineering & OOP",
     status: "Completed Semester 1 AY21/22",
-    shortdesc: "A CLI application that helps restaurant hawkers and owners to keep track of their food resources.",
+    shortdesc: "A CLI application that helps restaurant owners and hawkers to keep track of their food resources.",
     // eslint-disable-next-line
     longdesc: " <p>\
                   Working in a team of 4, Food-O-Rama was our final project to demonstrate our understanding of Java, Object-Oriented Programming and working in an Agile environment.\
