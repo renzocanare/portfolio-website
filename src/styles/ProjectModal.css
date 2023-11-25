@@ -18,6 +18,7 @@
     position: relative;
     max-width: 500px;
     width: 90%;
+    overflow-y: auto;
 }
 
 .modalCloseButton {
@@ -43,4 +44,22 @@
     display: flex;
     flex-wrap: wrap;
     margin: 10px 0;
+}
+
+@media only screen and (max-width: 800px) {
+    .modalContent {
+        max-width: 400px;
+        max-height: 80vh;
+        padding: 15px;
+        font-size: 0.8rem;
+    }
+}
+  
+@media only screen and (max-width: 480px) {
+    .modalContent {
+        max-width: 300px;
+        max-height: 80vh;
+        padding: 10px;
+        font-size: 0.8rem;
+    }
 }
