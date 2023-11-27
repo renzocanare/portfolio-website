@@ -176,9 +176,9 @@ export const SchoolProjectList= [
                   MQTT was used to relay live information between our game engine and the AR visualizer.\
                 </p>",
     skills: ["Unity AR", "C# Programming", "MQTT", "Python"],
-    ghlink:"",
-    ghlinkavail: false,
-    ghlinkreason: "Coming Soon",
+    ghlink:"https://github.com/renzocanare/nus-renzocanare/tree/main/CG4002",
+    ghlinkavail: true,
+    ghlinkreason: "",
     pinned: true
   },
   {
