@@ -63,7 +63,7 @@ function Home() {
               </p>
               <p>
                 I've always been fascinated about computers and especially on how Hardware is designed.
-                Coupled with a deep interest in Machine Learning, I hope to be able explore how I can put
+                Coupled with a deep interest in Machine Learning, I hope to be able to explore how I can put
                 both of these things together.
               </p>
               <p>
