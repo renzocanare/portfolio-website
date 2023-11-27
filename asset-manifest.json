@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.504bd0b5.css",
-    "main.js": "/static/js/main.b2ab4640.js",
+    "main.js": "/static/js/main.c96364f3.js",
     "static/js/787.861fdc3f.chunk.js": "/static/js/787.861fdc3f.chunk.js",
     "static/media/ee4211-banner.gif": "/static/media/ee4211-banner.c99abd30299703224250.gif",
     "static/media/cg4002-banner.png": "/static/media/cg4002-banner.0e81ce95b6b47cc9a627.png",
@@ -10,7 +10,7 @@
     "static/media/cs3241-banner.png": "/static/media/cs3241-banner.0fd727ccb6b38813d008.png",
     "static/media/mtg-banner.png": "/static/media/mtg-banner.12f7eb98ac0cb3826a89.png",
     "static/media/cs2102-banner.png": "/static/media/cs2102-banner.01ef1edb77e2357afc6a.png",
-    "static/media/sbat-banner.png": "/static/media/sbat-banner.04e285e72d5781724493.png",
+    "static/media/sbat-banner.png": "/static/media/sbat-banner.764fb6194db56a79bdb2.png",
     "static/media/portfolio-banner.png": "/static/media/portfolio-banner.fa0d81cecc7dd9cd5445.png",
     "static/media/cg3207-banner.png": "/static/media/cg3207-banner.c11400a940942b17110a.png",
     "static/media/cs2113t-banner.png": "/static/media/cs2113t-banner.c54d9f1dc16c1bfa16c4.png",
@@ -29,11 +29,11 @@
     "index.html": "/index.html",
     "static/media/scoll-button.svg": "/static/media/scoll-button.923f59d346fa7e9b7bcf5a9394b39b1c.svg",
     "main.504bd0b5.css.map": "/static/css/main.504bd0b5.css.map",
-    "main.b2ab4640.js.map": "/static/js/main.b2ab4640.js.map",
+    "main.c96364f3.js.map": "/static/js/main.c96364f3.js.map",
     "787.861fdc3f.chunk.js.map": "/static/js/787.861fdc3f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.504bd0b5.css",
-    "static/js/main.b2ab4640.js"
+    "static/js/main.c96364f3.js"
   ]
 }
