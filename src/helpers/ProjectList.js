@@ -4,6 +4,7 @@ import SBATBanner from "../assets/projects/sbat-banner.png"
 import EE4211Banner from "../assets/projects/ee4211-banner.gif"
 import CG3207Banner from "../assets/projects/cg3207-banner.png"
 import CS3243Banner from "../assets/projects/cs3243-banner.png"
+import CS2102Banner from "../assets/projects/cs2102-banner.png"
 import CG4002Banner from "../assets/projects/cg4002-banner.png"
 import CS3241Banner from "../assets/projects/cs3241-banner.png"
 import EE4204Banner from "../assets/projects/ee4204-banner.png"
@@ -129,6 +130,30 @@ export const SchoolProjectList= [
                   The mathematical theory behind other relevant topics such as Logical Agents and Bayesian Networks were also covered.\
                 </p>",
     skills: ["Python", "Artificial Intelligence"],
+    ghlink:"",
+    ghlinkavail: false,
+    ghlinkreason: "Coming Soon",
+    pinned: true
+  },
+  {
+    image: CS2102Banner,
+    name: "CS2102 Database Systems",
+    status: "Completed Semester 1 AY23/24",
+    shortdesc: "Explored the fundamentals of Database Systems such as the ER model, querying, stored functions, procedures and triggers using PostgreSQL.",
+    // eslint-disable-next-line
+    longdesc: " <p>\
+                  Through both individual and group work, this course explored Database Systems concepts such as:\
+                  <li>Entity-Relationship (ER) Model</li>\
+                  <li>SQL Schema and Querying</li>\
+                  <li>Relational Algebra and Calculus</li>\
+                  <li>Functions, Procedures and Triggers</li>\
+                  <li>Functional Dependencies and Normalization</li>\
+                  <li>Further Database Algorithms</li>\
+                </p>\
+                <p>\
+                  The practical group projects involved ER Modelling based on a contextual problem, Schema creation and implementation of Functions, Procedures and Triggers.\
+                </p>",
+    skills: ["PostgreSQL", "Database Systems"],
     ghlink:"",
     ghlinkavail: false,
     ghlinkreason: "Coming Soon",
