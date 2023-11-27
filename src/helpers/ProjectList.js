@@ -32,7 +32,7 @@ export const PersonalProjectList = [
   },
   {
     image: SBATBanner,
-    name: "Sentiment-based Trading Bot",
+    name: "Sentiment-Driven Trading Bot",
     status: "Paused (to study for school)",
     shortdesc: "Using sentiment from online articles to enter Crypto trading positions.",
     // eslint-disable-next-line
