@@ -43,7 +43,7 @@ function Projects() {
           showSchoolProjects ?
             <div>
               <Fade>
-                <h1>All NUS Projects_</h1>
+                <h1>My NUS Projects_</h1>
               </Fade>
             </div>
             :
