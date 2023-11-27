@@ -71,7 +71,7 @@ function Home() {
                 to make sense of large datasets, or use it to <s>predict the future</s> make good guesses on things.
               </p>
               <p>
-                In my free time, I'm probably trying to learn Tennis, working on some projects, tinkering <i>(breaking)</i> my old GameBoys, adventurising with friends,
+                In my free time, I'm probably trying to learn Tennis, working on some projects, tinkering <i>(breaking)</i> my old GameBoys, adventurising with friends, DJ'ing 2000s music,
                 losing in Magic: The Gathering or looking after my pet shrimp.
               </p>
             </div>
