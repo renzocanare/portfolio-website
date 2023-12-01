@@ -8,6 +8,7 @@ import CS2102Banner from "../assets/projects/cs2102-banner.png"
 import CG4002Banner from "../assets/projects/cg4002-banner.png"
 import CS3241Banner from "../assets/projects/cs3241-banner.png"
 import EE4204Banner from "../assets/projects/ee4204-banner.png"
+import CG2271Banner from "../assets/projects/cg2271-banner.gif"
 import CS2113TBanner from "../assets/projects/cs2113t-banner.png"
 
 export const PersonalProjectList = [
@@ -209,6 +210,23 @@ export const SchoolProjectList= [
     ghlink:"https://github.com/renzocanare/nus-renzocanare/tree/main/EE4204",
     ghlinkavail: true,
     ghlinkreason: "",
+    pinned: false
+  },
+  {
+    image: CG2271Banner,
+    name: "CG2271 Real-Time Operating Systems",
+    status: "Completed Semester 2 AY21/22",
+    shortdesc: "Developed a robotic car that can be driven using an Android App connected over Bluetooth.",
+    // eslint-disable-next-line
+    longdesc: " <p>\
+                  Working in a team of 4, the aim of this project was to develop a Real-Time Operating System (RTOS) based robotic car that was fully controllable using an Android App over Bluetooth.\
+                <p>\
+                  The project explored various RTOS concepts such as tasks, scheduling algorithms, RTOS customisation and concurrent real-time programming through practical hands-on experience.\
+                </p>",
+    skills: ["C Programming", "RTOS"],
+    ghlink:"",
+    ghlinkavail: false,
+    ghlinkreason: "Private",
     pinned: false
   },
   {
