@@ -1,6 +1,7 @@
 import MTGBanner from "../assets/projects/mtg-banner.png";
-import PortfolioBanner from "../assets/projects/portfolio-banner.png";
 import SBATBanner from "../assets/projects/sbat-banner.png"
+import PortfolioBanner from "../assets/projects/portfolio-banner.png";
+import LBPBanner from "../assets/projects/lbp-banner.png";
 import EE4211Banner from "../assets/projects/ee4211-banner.gif"
 import CG3207Banner from "../assets/projects/cg3207-banner.png"
 import CS3243Banner from "../assets/projects/cs3243-banner.png"
@@ -68,6 +69,32 @@ export const PersonalProjectList = [
     ghlink:"https://github.com/renzocanare/portfolio-website",
     ghlinkavail: true,
     ghlinkreason: "",
+    pinned: false
+  },
+  {
+    image: LBPBanner,
+    name: "Laundry Bot Project",
+    status: "Completed",
+    shortdesc: "Prototyped a system that automatically notifies Hall residents over Telegram when laundry is completed.",
+    // eslint-disable-next-line
+    longdesc: " <p>\
+                  Working as a team of 2, we prototyped a system which was aimed at improving the quality of life of residents at Eusoff Hall. Since there were only 6 washing machines\
+                  shared between approximately 80 residents in each block, we hoped that such a system would help residents to be able to plan their laundry scheduling.\
+                </p>\
+                <p>\
+                  The prototype involved:\
+                  <li>Setting up vibration sensors at various washing machines to detect their status</li>\
+                  <li>Connecting these vibration sensors to a Raspberry Pi Zero</li>\
+                  <li>Updating a Google Sheets page with the washing machine status</li>\
+                  <li>Relaying the status information to a Telegram bot</li>\
+                </p>\
+                <p>\
+                  Due to upgrading works to the washing machine areas, we were unable to push our project past the prototyping stage before our last day at Hall.\
+              </p>",
+    skills: ["Python", "RaspberryPi", "Internet of Things"],
+    ghlink:"",
+    ghlinkavail: false,
+    ghlinkreason: "Private",
     pinned: false
   },
 ];
