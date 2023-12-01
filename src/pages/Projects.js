@@ -14,7 +14,7 @@ function Projects() {
   return (
     <div className="projects">
       <Fade>
-        <h1>My Personal Projects_</h1>
+        <h1>My Personal Projects</h1>
       </Fade>
       <div className="projectList">
         {PersonalProjectList.map((project, idx) => {
@@ -43,13 +43,13 @@ function Projects() {
           showSchoolProjects ?
             <div>
               <Fade>
-                <h1>My NUS Projects_</h1>
+                <h1>My NUS Projects</h1>
               </Fade>
             </div>
             :
             <div>
               <Fade>
-                <h1>Pinned NUS Projects_</h1>
+                <h1>Pinned NUS Projects</h1>
               </Fade>
             </div>
         }

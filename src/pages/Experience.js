@@ -15,7 +15,7 @@ function Experience() {
     <div className="overall">
       <div className="work-experience">
         <Fade>
-          <h1 className="timeline-header">Work Experience_</h1>
+          <h1 className="timeline-header">Work Experience</h1>
         </Fade>
         <VerticalTimeline lineColor="#3e497a">
           {/* Work Experience Timeline Elements */}
@@ -78,7 +78,7 @@ function Experience() {
 
       <div className="school-experience">
         <Fade>
-          <h1 className="timeline-header">Educational Background_</h1>
+          <h1 className="timeline-header">Educational Background</h1>
         </Fade>
         <VerticalTimeline lineColor="#3e497a">
           {/* Education Timeline Elements */}

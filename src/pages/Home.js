@@ -78,7 +78,7 @@ function Home() {
           </Fade>
           {/* List of Programming Languages Section */}
           <Fade>
-            <h2>Programming Languages_</h2>
+            <h2>Programming Languages</h2>
           </Fade>
           <Fade>
             <div className="skill-badges">
@@ -94,7 +94,7 @@ function Home() {
           </Fade>
           {/* Certifications Section */}
           <Fade>
-            <h2>Self Learning Certifications_</h2>
+            <h2>Self Learning Certifications</h2>
           </Fade>
           <div className="certifications-container">
             {CertList.map((cert, idx) => {
@@ -113,7 +113,7 @@ function Home() {
             })}
           </div>
           <Fade>
-            <h2>Relevant Courses Taken at NUS_</h2>
+            <h2>Relevant Courses Taken at NUS</h2>
           </Fade>
           <Fade>
             <div className="classes-container">
