@@ -25,7 +25,7 @@ export const PersonalProjectList = [
                   We decided that there had to be a faster way to do this instead of manually tabulating prices using Microsoft Excel and thus, this project was born.\
                 </p>\
               ",
-    skills: ["Django", "Python"],
+    skills: ["MongoDB", "Express.js", "React.js", "Node.js", "JavaScript"],
     ghlink:"",
     ghlinkavail: false,
     ghlinkreason: "Coming Soon",
