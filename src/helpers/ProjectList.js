@@ -35,7 +35,7 @@ export const PersonalProjectList = [
   {
     image: SBATBanner,
     name: "Sentiment-Driven Trading Bot",
-    status: "Paused (to study for school)",
+    status: "Temporarily paused for school",
     shortdesc: "Using sentiment from online articles to enter Crypto trading positions.",
     // eslint-disable-next-line
     longdesc: " <p>\
@@ -86,7 +86,7 @@ export const PersonalProjectList = [
                   <li>Setting up vibration sensors at various washing machines to detect their status</li>\
                   <li>Connecting these vibration sensors to a Raspberry Pi Zero</li>\
                   <li>Updating a Google Sheets page with the washing machine status</li>\
-                  <li>Relaying the status information to a Telegram bot</li>\
+                  <li>Relaying the status information to a Telegram bot where users can check the status or reserve washing machines</li>\
                 </p>\
                 <p>\
                   Due to upgrading works to the washing machine areas, we were unable to push our project past the prototyping stage before our last day at Hall.\
