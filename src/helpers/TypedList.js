@@ -7,5 +7,5 @@ export const TypedList = [
     "Retro GameBoy Modding",
     "Pet Shrimp",
     "DJing 2000's Music",
-    "Making Ice Cream at Home"
+    "Making Gelato at Home"
   ];
