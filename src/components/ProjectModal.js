@@ -22,11 +22,12 @@ const ProjectModal = ({ isOpen, closeModal, project }) => {
               <div className="project-status">{project.status}</div>
               <div className="project-desc-short">{parse(project.longdesc)}</div>
               <span className={`modal-project-buttons ${project.ghlinkavail ? 'ghlink-available' : 'ghlink-unavailable'}`}>
-                {project.ghlinkavail ? (
-                  <a href={project.ghlink} target="_blank" rel="noreferrer" className="modal-project-GitHub-button-avail" title="View GitHub Repo" alt="GitHub"><GithubIcon />&nbsp;View GitHub Repo</a>
-                ) : (
-                  <div className="modal-project-GitHub-button-unavail" title={project.ghlinkreason}><GithubIcon />&nbsp;GitHub Repo is currently {project.ghlinkreason}</div>
-                )}
+                {project.ghlinkavail 
+                  ? (<a href={project.ghlink} target="_blank" rel="noreferrer" className="modal-project-GitHub-button-avail" title="View GitHub Repo" alt="GitHub"><GithubIcon />&nbsp;View GitHub Repo</a>)
+                  : project.ghlinkreason === 'Unavailable' 
+                  ? (<div className="modal-project-GitHub-button-unavail" title={project.ghlinkreason}><GithubIcon />&nbsp;There is no GitHub Repo for this project</div>)
+                  : (<div className="modal-project-GitHub-button-unavail" title={project.ghlinkreason}><GithubIcon />&nbsp;GitHub Repo is currently {project.ghlinkreason}</div>)
+                 }
               </span>
               <hr />
               <div className="project-skills">
