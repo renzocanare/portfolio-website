@@ -2,6 +2,7 @@ import MTGBanner from "../assets/projects/mtg-banner.png";
 import SBATBanner from "../assets/projects/sbat-banner.png"
 import PortfolioBanner from "../assets/projects/portfolio-banner.png";
 import LBPBanner from "../assets/projects/lbp-banner.png";
+import GBABanner from "../assets/projects/gba-banner.gif";
 import EE4211Banner from "../assets/projects/ee4211-banner.gif"
 import CG3207Banner from "../assets/projects/cg3207-banner.png"
 import CS3243Banner from "../assets/projects/cs3243-banner.png"
@@ -73,7 +74,7 @@ export const PersonalProjectList = [
   },
   {
     image: LBPBanner,
-    name: "Laundry Bot Project",
+    name: "Laundry Bot",
     status: "Completed",
     shortdesc: "Prototyped a system that automatically notifies Hall residents over Telegram when laundry is completed.",
     // eslint-disable-next-line
@@ -83,10 +84,10 @@ export const PersonalProjectList = [
                 </p>\
                 <p>\
                   The prototype involved:\
-                  <li>Setting up vibration sensors at various washing machines to detect their status</li>\
-                  <li>Connecting these vibration sensors to a Raspberry Pi Zero</li>\
-                  <li>Updating a Google Sheets page with the washing machine status</li>\
-                  <li>Relaying the status information to a Telegram bot where users can check the status or reserve washing machines</li>\
+                  <li>Setting up vibration sensors at various washing machines to detect their status.</li>\
+                  <li>Connecting these vibration sensors to a Raspberry Pi Zero.</li>\
+                  <li>Updating a Google Sheets page with the washing machine status.</li>\
+                  <li>Relaying the status information to a Telegram bot where users can check the status or reserve washing machines.</li>\
                 </p>\
                 <p>\
                   Due to upgrading works to the washing machine areas, we were unable to push our project past the prototyping stage before our last day at Hall.\
@@ -95,6 +96,29 @@ export const PersonalProjectList = [
     ghlink:"",
     ghlinkavail: false,
     ghlinkreason: "Private",
+    pinned: false
+  },
+  {
+    image: GBABanner,
+    name: "Retro GameBoy Modding",
+    status: "Completed",
+    shortdesc: "Restored my old GameBoy Advance system, adding a new backlit IPS LCD screen, a USB-C rechargeable battery pack and replacing the case.",
+    // eslint-disable-next-line
+    longdesc: " <p>\
+                  I spent much of my younger days playing different iterations of Pokemon on my GameBoy. Many years later, I dug it out to find that the original LCD \
+                  screen had liquid crystal leakage and the case was showing it's old age. I then decided to restore my GameBoy to it's former glory, with the addition of newer technology that wasn't widely available when this device was released in the early 2000's.\
+                </p>\
+                <p>\
+                  Modifications Made (with some soldering):\
+                  <li>Replaced the leaking, non-backlit LCD with a new IPS LCD screen.</li>\
+                  <li>Added a USB-C rechargeable battery pack module in place of AA-batteries.</li>\
+                  <li>Swapped the original purple case and gray buttons for a sleeker black and orange combination.</li>\
+                  <li>Replaced the batteries in my Pokemon GameBoy cartridges so the in-game clock works again.</li>\
+                </p>",
+    skills: ["Hardware", "Retro Modding", "Tinkering"],
+    ghlink:"",
+    ghlinkavail: false,
+    ghlinkreason: "Unavailable",
     pinned: false
   },
 ];
