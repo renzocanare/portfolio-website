@@ -3,7 +3,7 @@ import { QtOriginal, JavascriptOriginal, PythonOriginal } from "devicons-react"
 export const CertList = [
   {
     frontimg: "https://upload.wikimedia.org/wikipedia/en/e/ef/SystemVerilog_logo.png",
-    backtext: "To explore industry standard HDL usage.",
+    backtext: "To explore industry standard HDLs for Hardware Design.",
     certlink: "",
     certready: false,
     desc: "Fundamentals of SystemVerilog (starting in Dec 2023)",

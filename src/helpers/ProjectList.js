@@ -26,6 +26,9 @@ export const PersonalProjectList = [
                 <p>\
                   We decided that there had to be a faster way to do this instead of manually tabulating prices using Microsoft Excel and thus, this project was born.\
                 </p>\
+                <p>\
+                  As a possible extension to this project, we may integrate card price history with short-term price predictions using simple Machine Learning models.\
+                </p>\
               ",
     skills: ["MongoDB", "Express.js", "React.js", "Node.js", "JavaScript"],
     ghlink:"",
