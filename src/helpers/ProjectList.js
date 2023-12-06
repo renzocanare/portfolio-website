@@ -92,7 +92,7 @@ export const PersonalProjectList = [
                 <p>\
                   Due to upgrading works to the washing machine areas, we were unable to push our project past the prototyping stage before our last day at Hall.\
               </p>",
-    skills: ["Python", "RaspberryPi", "Internet of Things"],
+    skills: ["Python", "RaspberryPi", "IoT"],
     ghlink:"",
     ghlinkavail: false,
     ghlinkreason: "Private",
@@ -140,7 +140,7 @@ export const SchoolProjectList= [
                 <p>\
                   As a proof of concept, we visualized the predictions using a heatmap for a particular set of carparks that are within 200 metres of a hawker centre (located in the Northern region of Singapore).\
                 </p>",      
-    skills: ["Python", "SKLearn", "Pandas", "Machine Learning"],
+    skills: ["Python", "SKLearn", "Pandas", "Machine Learning", "IoT"],
     ghlink:"https://github.com/renzocanare/nus-renzocanare/tree/main/EE4211",
     ghlinkavail: true,
     ghlinkreason: "",
@@ -208,7 +208,7 @@ export const SchoolProjectList= [
     skills: ["PostgreSQL", "Database Systems"],
     ghlink:"",
     ghlinkavail: false,
-    ghlinkreason: "Coming Soon",
+    ghlinkreason: "Unavailable",
     pinned: true
   },
   {
@@ -274,7 +274,7 @@ export const SchoolProjectList= [
                 <p>\
                   The project explored various RTOS concepts such as tasks, scheduling algorithms, RTOS customisation and concurrent real-time programming through practical hands-on experience.\
                 </p>",
-    skills: ["C Programming", "RTOS"],
+    skills: ["C Programming", "RTOS", "Hardware"],
     ghlink:"",
     ghlinkavail: false,
     ghlinkreason: "Private",
