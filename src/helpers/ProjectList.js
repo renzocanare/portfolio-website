@@ -141,9 +141,9 @@ export const SchoolProjectList= [
                   As a proof of concept, we visualized the predictions using a heatmap for a particular set of carparks that are within 200 metres of a hawker centre (located in the Northern region of Singapore).\
                 </p>",      
     skills: ["Python", "SKLearn", "Pandas", "Machine Learning"],
-    ghlink:"",
-    ghlinkavail: false,
-    ghlinkreason: "Coming Soon",
+    ghlink:"https://github.com/renzocanare/nus-renzocanare/tree/main/EE4211",
+    ghlinkavail: true,
+    ghlinkreason: "",
     pinned: true
   },
   {
