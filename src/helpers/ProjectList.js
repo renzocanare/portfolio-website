@@ -182,9 +182,9 @@ export const SchoolProjectList= [
                   The mathematical theory behind other relevant topics such as Logical Agents and Bayesian Networks were also covered.\
                 </p>",
     skills: ["Python", "Artificial Intelligence"],
-    ghlink:"",
-    ghlinkavail: false,
-    ghlinkreason: "Coming Soon",
+    ghlink:"https://github.com/renzocanare/nus-renzocanare/tree/main/CS3243",
+    ghlinkavail: true,
+    ghlinkreason: "",
     pinned: true
   },
   {
