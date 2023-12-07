@@ -161,7 +161,7 @@ export const SchoolProjectList= [
                 <p>\
                   Our final project could support all basic ARM DP/Mem/Branch instructions, with the addition of SMULL/UMULL through multi-cycle micro operations.\
                 </p>",
-    skills: ["Verilog", "ARM", "Vivado", "Hardware Design" ],
+    skills: ["Verilog", "FPGA", "ARM", "Vivado", "Hardware Design" ],
     ghlink:"",
     ghlinkavail: false,
     ghlinkreason: "Private",
