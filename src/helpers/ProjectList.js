@@ -17,7 +17,7 @@ export const PersonalProjectList = [
   {
     image: MTGBanner,
     name: "Magic: The Gathering Card Price Comparison",
-    status: "Starting in Dec 2023",
+    status: "In Progress",
     shortdesc: "A website that allows users to compare card prices between MTG hobby shops in Singapore. ",
     // eslint-disable-next-line
     longdesc: " <p>\
