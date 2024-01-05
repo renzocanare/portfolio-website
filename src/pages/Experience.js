@@ -29,7 +29,7 @@ function Experience() {
               HP Inc.
             </h3>
             <h4 className="vertical-timeline-element-subtitle">
-              R&D Firmware Engineering Intern, Singapore
+              R&D Embedded Firmware Engineering Intern, Singapore
             </h4>
             <p>
               <li>Automated System Testing</li>
@@ -99,7 +99,7 @@ function Experience() {
               <h4 className="sub-header">Academics</h4>
               <p>
                 <li>Proficiency in C, C++, C#, Java and Python</li>
-                <li>Interest in Hardware Design and Software Engineering for Machine Learning and Data Science</li>
+                <li>Interest in Hardware Design and Software Engineering for Machine Learning and Full Stack Development </li>
                 <li>List of Projects: <a href="/projects" target="_blank" title="View Projects Page" alt="Projects list">rivera.fun/projects</a></li>
               </p>
             </div>
@@ -112,7 +112,7 @@ function Experience() {
                 <li>Hall Promotion Board (Head)</li>
                 <li>Hall Relations Board (Publicity Head)</li>
                 <li>Special Projects Team (Programs Head)</li>
-                <li>Eusoff Hackers (Laundry Bot Project Head)</li>
+                <li>Eusoff Hackers (Laundry Bot Project)</li>
                 <li>Eusoff Football</li>
               </p>
             </div>
