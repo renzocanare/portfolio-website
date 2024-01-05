@@ -5,7 +5,8 @@ import GithubIcon from "@mui/icons-material/GitHub";
 import {
   COriginal, CplusplusOriginal, CsharpOriginal,
   JavaOriginalWordmark, PythonOriginalWordmark,
-  PostgresqlOriginalWordmark
+  PostgresqlOriginalWordmark,
+  // JavascriptOriginal
 } from "devicons-react";
 import Fade from "react-reveal/Fade";
 import ProfileImage from "../assets/profile-image.jpeg";
@@ -35,7 +36,7 @@ function Home() {
           <h2><b>Hi, I'm Renzo</b></h2>
           <DynamicText />
           <div className="tagline">
-            <p>Hardware & Software Engineering, Machine Learning.</p>
+            <p>Software & Hardware Engineering, Machine Learning.</p>
           </div>
           <div className="media">
             <a href="https://www.linkedin.com/in/renzo-canare/" target="_blank" rel="noreferrer" title="View My LinkedIn Profile" alt="Linkedin">
@@ -62,17 +63,16 @@ function Home() {
                 My name is <b>Renzo Rivera Canare</b>, a Final Year Computer Engineering student at the National University of Singapore (NUS).
               </p>
               <p>
-                I've always been fascinated about computers and especially on how Hardware is designed.
-                Coupled with a deep interest in Machine Learning, I hope to be able to explore how I can put
-                both of these things together.
+                I've always been fascinated about computers, especially on how we can design both Software and Hardware tools to make life easier.
+                Coupled with an interest in Machine Learning, I hope to be able to learn how I can put
+                all of these things together.
               </p>
               <p>
-                I enjoy appyling these Machine Learning algorithms
-                to make sense of large datasets, or use it to <s>predict the future</s> make good guesses on things.
+                Currently, I am exploring Full Stack Development through my Magic: The Gathering Card Price Comparison project, Machine Learning by developing a Sentiment-Driven Trading Bot, and learning SystemVerilog for FPGA design.
               </p>
               <p>
-                In my free time, I'm probably trying to learn Tennis, working on some projects, tinkering <i>(breaking)</i> my old GameBoys, adventurising with friends, DJ'ing 2000s music,
-                losing in Magic: The Gathering or looking after my pet shrimp.
+                In my free time, I'm probably trying to get the hang of Tennis, tinkering <i>(breaking)</i> my old GameBoys, DJ'ing 2000s music, adventurising with friends, 
+                losing in Magic: The Gathering or looking after my pet shrimp!
               </p>
             </div>
           </Fade>
@@ -89,6 +89,7 @@ function Home() {
                 <JavaOriginalWordmark className="skill-icon" color="red" size="100" />
                 <PythonOriginalWordmark className="skill-icon" color="red" size="100" />
                 <PostgresqlOriginalWordmark className="skill-icon" color="red" size="100" />
+                {/* <JavascriptOriginal className="skill-icon" color="red" size="100" /> */}
               </span>
             </div>
           </Fade>

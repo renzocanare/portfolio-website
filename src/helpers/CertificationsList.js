@@ -6,7 +6,7 @@ export const CertList = [
     backtext: "To explore industry standard HDLs for Hardware Design.",
     certlink: "",
     certready: false,
-    desc: "Fundamentals of SystemVerilog (starting in Dec 2023)",
+    desc: "Fundamentals of SystemVerilog (In Progress)",
     backgroundColor: "rgb(221, 221, 221)", 
   },  
   {
