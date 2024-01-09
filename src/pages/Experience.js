@@ -99,7 +99,7 @@ function Experience() {
               <h4 className="sub-header">Academics</h4>
               <p>
                 <li>Proficiency in C, C++, C#, Java and Python</li>
-                <li>Interest in Hardware Design and Software Engineering for Machine Learning and Full Stack Development </li>
+                <li>Interest in Software Engineering, Hardware Design and Machine Learning</li>
                 <li>List of Projects: <a href="/projects" target="_blank" title="View Projects Page" alt="Projects list">rivera.fun/projects</a></li>
               </p>
             </div>
@@ -109,7 +109,7 @@ function Experience() {
               <h5 className="sub-header">Aug 2020 - May 2022</h5>
               <p>
                 <li>Recepient of the Merit Award</li>
-                <li>Hall Promotion Board (Head)</li>
+                <li>Hall Promotion Board (Overall Head)</li>
                 <li>Hall Relations Board (Publicity Head)</li>
                 <li>Special Projects Team (Programs Head)</li>
                 <li>Eusoff Hackers (Laundry Bot Project)</li>
