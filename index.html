@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title><!-- updated by main.js from data.js -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon"  href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="apple-touch-icon"          href="assets/favicon/apple-touch-icon.png">
+  <link rel="manifest"                  href="assets/favicon/site.webmanifest">
+  <meta name="theme-color"              content="#0a0c12">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ── Scroll progress bar ──────────────────────────────────── -->
+<div id="progress-bar"></div>
+
+<!-- ── Background decorations ──────────────────────────────── -->
+<div id="bg-grid"></div>
+<div id="bg-glow"></div>
+
+<!-- ── Nav ─────────────────────────────────────────────────── -->
+<nav>
+  <div class="nav-inner pad-x">
+    <a href="#home" class="nav-logo">
+      <span class="nav-logo-dot"></span>
+      <span class="nav-logo-name"></span><span class="nav-logo-accent nav-logo-tld"></span>
+    </a>
+
+    <div class="nav-links" id="nav-links">
+      <a href="#about"      data-section="about">about</a>
+      <a href="#skills"     data-section="skills">skills</a>
+      <a href="#experience" data-section="experience">work</a>
+      <a href="#projects"   data-section="projects">projects</a>
+      <a href="#certs"      data-section="certs">certs</a>
+    </div>
+
+    <div class="nav-right">
+      <a href="#contact" class="nav-cta">Get in touch</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ── Main content ─────────────────────────────────────────── -->
+<main class="main-wrap">
+
+  <!-- HERO ─────────────────────────────────────────────────── -->
+  <section id="home" class="hero">
+    <div>
+      <div class="hero-eyebrow">Hello, I'm</div>
+      <h1 class="hero-name">
+        <span id="hero-name-first"></span><br><span id="hero-name-last"></span><span class="hero-cursor">_</span>
+      </h1>
+      <p class="hero-title" id="hero-title"></p>
+      <p class="hero-desc">
+        I build reliable, well-crafted software — and I care just as much about
+        <em>why</em> it gets built as how. Engineer by trade, product-minded by instinct.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">View my work →</a>
+        <a href="#" id="hero-resume" class="btn-outline">Download résumé</a>
+      </div>
+      <div class="hero-social">
+        <a id="hero-github"   href="#" target="_blank" rel="noopener">GitHub ↗</a>
+        <a id="hero-linkedin" href="#" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+    </div>
+
+    <!-- Photo card (flip on click) -->
+    <div class="photo-wrap">
+      <div class="photo-glow"></div>
+      <div class="photo-perspective" id="photo-card" title="Click to flip">
+        <div class="photo-inner" id="photo-inner">
+          <!-- Front face: formal photo -->
+          <div class="photo-face photo-front" id="photo-front">
+            <div class="photo-placeholder-icon">◍</div>
+            <div class="photo-placeholder-label">replace with<br>formal photo.jpg</div>
+            <div class="photo-flip-hint">tap to flip ↺</div>
+          </div>
+          <!-- Back face: casual photo -->
+          <div class="photo-face photo-back" id="photo-back">
+            <div class="photo-placeholder-icon">☺</div>
+            <div class="photo-placeholder-label">replace with<br>casual photo.jpg</div>
+            <div class="photo-flip-hint">tap to flip ↺</div>
+          </div>
+        </div>
+      </div>
+      <div class="photo-badge">
+        <span class="badge-dot">●</span> <span id="hero-status"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT ────────────────────────────────────────────────── -->
+  <section id="about" class="section reveal">
+    <div class="section-tag">// 01 — about</div>
+    <h2 class="section-title">A bit about me</h2>
+    <div class="about-grid">
+      <div class="about-bio" id="about-bio"></div>
+      <div class="glance-card">
+        <div class="glance-label">~ at a glance</div>
+        <div id="glance-rows"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS ───────────────────────────────────────────────── -->
+  <section id="skills" class="section reveal">
+    <div class="section-tag">// 02 — skills</div>
+    <h2 class="section-title">What I bring</h2>
+    <div class="skills-grid" id="skills-grid"></div>
+  </section>
+
+  <!-- EXPERIENCE ───────────────────────────────────────────── -->
+  <section id="experience" class="section reveal">
+    <div class="section-tag">// 03 — experience</div>
+    <h2 class="section-title">Where I've worked</h2>
+    <div class="timeline" id="timeline"></div>
+  </section>
+
+  <!-- PROJECTS ─────────────────────────────────────────────── -->
+  <section id="projects" class="section">
+    <div class="section-tag">// 04 — projects</div>
+    <div class="projects-header">
+      <div>
+        <h2 class="projects-title">Things I've built</h2>
+        <p class="projects-subtitle">A mix of personal experiments and school projects.</p>
+      </div>
+      <div class="filter-tabs" id="filter-tabs">
+        <button class="filter-tab active" data-filter="all">All</button>
+        <button class="filter-tab" data-filter="personal">Personal</button>
+        <button class="filter-tab" data-filter="school">School</button>
+      </div>
+    </div>
+    <div class="projects-grid" id="projects-grid"></div>
+  </section>
+
+  <!-- CERTIFICATIONS ───────────────────────────────────────── -->
+  <section id="certs" class="section reveal">
+    <div class="section-tag">// 05 — certifications</div>
+    <h2 class="section-title">Certifications</h2>
+    <div class="certs-grid" id="certs-grid"></div>
+  </section>
+
+  <!-- CONTACT ──────────────────────────────────────────────── -->
+  <section id="contact" class="section" style="padding-bottom:40px;">
+    <div class="section-tag">// 06 — contact</div>
+    <h2 class="section-title">Let's build something</h2>
+    <p style="color:#8a93a3; margin:0 0 32px; font-size:16px; max-width:520px;">
+      Have a role, a project, or just want to say hi? Drop me a line.
+    </p>
+    <div class="contact-grid">
+      <div>
+        <!-- Success state (shown after submit) -->
+        <div class="form-success" id="form-success">
+          <div class="success-icon">✓</div>
+          <h3 class="success-title">Thanks, message ready!</h3>
+          <p class="success-note">
+            This is a demo form. Wire it to
+            <a href="https://formspree.io" target="_blank" rel="noopener" style="color:var(--accent)">Formspree</a>
+            or your email to receive submissions.
+          </p>
+        </div>
+        <!-- Contact form -->
+        <form class="contact-form" id="contact-form">
+          <div class="form-row">
+            <input  class="form-input"    type="text"  placeholder="Your name"        required>
+            <input  class="form-input"    type="email" placeholder="Email"             required>
+          </div>
+          <textarea class="form-textarea" placeholder="What's on your mind?" rows="5"  required></textarea>
+          <button type="submit" class="form-submit">Send message →</button>
+        </form>
+      </div>
+
+      <!-- Social / elsewhere card -->
+      <div class="elsewhere-card">
+        <div class="elsewhere-label">~ elsewhere</div>
+        <a id="contact-github" href="#" class="elsewhere-link" target="_blank" rel="noopener">
+          <span>GitHub</span>
+          <span class="elsewhere-handle" id="contact-github-handle"></span>
+        </a>
+        <a id="contact-linkedin" href="#" class="elsewhere-link" target="_blank" rel="noopener">
+          <span>LinkedIn</span>
+          <span class="elsewhere-handle" id="contact-linkedin-handle"></span>
+        </a>
+        <button class="copy-email-btn" id="copy-email-btn">
+          <span>Email</span>
+          <span class="elsewhere-handle" id="copy-label"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ── Footer ───────────────────────────────────────────────── -->
+<footer>
+  <div class="footer-inner">
+    <span id="footer-copy"></span>
+    <span>Built with care · hosted on GitHub Pages</span>
+  </div>
+</footer>
+
+<!-- ── Project case-study modal ─────────────────────────────── -->
+<div class="modal-overlay" id="modal">
+  <div class="modal-box">
+    <div class="modal-thumb">
+      <div id="modal-thumb-img"></div>
+      <span class="modal-kind" id="modal-kind"></span>
+      <button class="modal-close" onclick="closeModalBtn()">✕</button>
+    </div>
+    <div class="modal-content">
+      <h3 class="modal-title" id="modal-title"></h3>
+      <div class="modal-sections">
+        <div>
+          <div class="modal-section-label">→ the problem</div>
+          <p class="modal-section-text" id="modal-problem"></p>
+        </div>
+        <div>
+          <div class="modal-section-label">→ what I did</div>
+          <p class="modal-section-text" id="modal-role"></p>
+        </div>
+        <div>
+          <div class="modal-section-label">→ the outcome</div>
+          <p class="modal-section-text" id="modal-outcome"></p>
+        </div>
+      </div>
+      <div class="modal-tags" id="modal-tags"></div>
+      <div class="modal-actions">
+        <a id="modal-code" href="#" target="_blank" rel="noopener"
+           class="btn-primary" style="font-size:13px;font-weight:500;padding:10px 18px;border-radius:8px;">
+          View code ↗
+        </a>
+        <a id="modal-live" href="#" target="_blank" rel="noopener"
+           class="btn-outline" style="font-size:13px;font-weight:500;padding:10px 18px;border-radius:8px;">
+          Live demo ↗
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── Cert modal ───────────────────────────────────────────── -->
+<div class="modal-overlay" id="cert-modal">
+  <div class="modal-box cert-modal-box">
+    <div class="cert-modal-header">
+      <div>
+        <div class="cert-modal-issuer" id="cert-modal-issuer"></div>
+        <h3 class="cert-modal-title" id="cert-modal-title"></h3>
+        <div class="cert-modal-year" id="cert-modal-year"></div>
+      </div>
+      <button class="modal-close" style="position:static;flex-shrink:0;" onclick="closeCertModal()">✕</button>
+    </div>
+    <div class="cert-modal-body">
+      <div class="cert-modal-img-wrap" id="cert-modal-img-wrap"></div>
+      <div class="cert-modal-actions">
+        <a id="cert-modal-link" href="#" target="_blank" rel="noopener"
+           class="btn-outline" style="font-size:13px;font-weight:500;padding:10px 18px;border-radius:8px;">
+          Verify credential ↗
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── Back to top ──────────────────────────────────────────── -->
+<a href="#home" id="back-to-top" aria-label="Back to top">↑</a>
+
+<!-- ── Scripts (data first, then logic) ─────────────────────── -->
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
