@@ -172,20 +172,20 @@
         <!-- Success state (shown after submit) -->
         <div class="form-success" id="form-success">
           <div class="success-icon">✓</div>
-          <h3 class="success-title">Thanks, message ready!</h3>
-          <p class="success-note">
-            This is a demo form. Wire it to
-            <a href="https://formspree.io" target="_blank" rel="noopener" style="color:var(--accent)">Formspree</a>
-            or your email to receive submissions.
-          </p>
+          <h3 class="success-title">Thanks, message sent!</h3>
+          <p class="success-note">I'll get back to you soon.</p>
         </div>
+        <!-- Error state (shown if the send fails) -->
+        <p class="form-error" id="form-error" style="display:none;"></p>
         <!-- Contact form -->
         <form class="contact-form" id="contact-form">
           <div class="form-row">
-            <input  class="form-input"    type="text"  placeholder="Your name"        required>
-            <input  class="form-input"    type="email" placeholder="Email"             required>
+            <input  class="form-input"    type="text"  name="name"    placeholder="Your name"        required>
+            <input  class="form-input"    type="email" name="email"   placeholder="Email"             required>
           </div>
-          <textarea class="form-textarea" placeholder="What's on your mind?" rows="5"  required></textarea>
+          <textarea class="form-textarea" name="message" placeholder="What's on your mind?" rows="5"  required></textarea>
+          <!-- Honeypot — left empty by humans, hidden from sighted users and screen readers -->
+          <input class="form-honeypot" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
           <button type="submit" class="form-submit">Send message →</button>
         </form>
       </div>
@@ -201,10 +201,6 @@
           <span>LinkedIn</span>
           <span class="elsewhere-handle" id="contact-linkedin-handle"></span>
         </a>
-        <button class="copy-email-btn" id="copy-email-btn">
-          <span>Email</span>
-          <span class="elsewhere-handle" id="copy-label"></span>
-        </button>
       </div>
     </div>
   </section>

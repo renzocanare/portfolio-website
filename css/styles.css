@@ -506,6 +506,16 @@ nav {
   transition: opacity .15s;
 }
 .form-submit:hover { opacity: 0.9; }
+.form-submit:disabled { opacity: 0.6; cursor: not-allowed; }
+.form-honeypot {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap; opacity: 0; pointer-events: none;
+}
+.form-error {
+  color: #e8718a; background: rgba(232,113,138,0.08);
+  border: 1px solid rgba(232,113,138,0.3); border-radius: 9px;
+  padding: 12px 14px; font-size: 13px; margin: 0 0 14px;
+}
 .form-success {
   display: none; border: 1px solid rgba(15,174,142,0.4);
   background: rgba(15,174,142,0.07); border-radius: 14px;

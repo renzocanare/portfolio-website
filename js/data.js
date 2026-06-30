@@ -16,7 +16,6 @@ const SITE = {
   name:       'Renzo Rivera Canare',
   title:      'Software Engineer',
   domain:     'renzocanare.com',
-  email:      'reach out to me on the form',
   status:     'open to opportunities',   // shown in hero badge
 
   // Bio paragraph(s). Each string becomes its own <p>.
@@ -31,6 +30,10 @@ const SITE = {
   github:   'https://github.com/renzocanare',
   linkedin: 'https://www.linkedin.com/in/renzo-canare/',
   resume:   '',
+
+  // Contact form endpoint — the deployed mail-contact-server URL,
+  // e.g. 'https://mail-contact-server.vercel.app/api/contact'.
+  contactEndpoint: 'https://mail.rivera.fun/api/contact',
 
   // ── Hero photo ─────────────────────────────────────────────
   // Drop images into assets/photos/ and set the filenames.
@@ -79,7 +82,7 @@ const EXPERIENCE = [
     role:    'Software Engineer',
     company: 'NCS Group',
     period:  'Jul 2024 — Present',
-    desc:    'Building, testing and shipping production systems for large-scale government and enterprise clients. Rated Exceeding Expectations in both review cycles, on track for promotion to SWE2. Led client-facing UAT sessions, shipped 4 modules serving ~300 users at a government agency, and acted as cross-team integrator across 3+ squads — aligning developers, testers, and leads on scope and timelines.',
+    desc:    'Building, testing and shipping production systems for large-scale government and enterprise clients. Rated Exceeding Expectations in both review cycles to date. Led client-facing UAT sessions, shipped 4 modules serving ~300 users at a government agency, and acted as cross-team integrator across 3+ squads — aligning developers, testers, and leads on scope and timelines.',
   },
   {
     role:    'R&D Embedded Firmware Engineering Intern',

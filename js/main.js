@@ -53,11 +53,11 @@ function init() {
     .join('');
 
   // Social links in contact "elsewhere" card
+  const lastSegment = url => url.split('/').filter(Boolean).pop();
   document.getElementById('contact-github').href        = SITE.github;
-  document.getElementById('contact-github-handle').textContent = '@' + SITE.github.split('/').pop() + ' ↗';
+  document.getElementById('contact-github-handle').textContent = '@' + lastSegment(SITE.github) + ' ↗';
   document.getElementById('contact-linkedin').href      = SITE.linkedin;
-  document.getElementById('contact-linkedin-handle').textContent = 'in/' + SITE.linkedin.split('/').pop() + ' ↗';
-  document.getElementById('copy-label').textContent     = SITE.email;
+  document.getElementById('contact-linkedin-handle').textContent = 'in/' + lastSegment(SITE.linkedin) + ' ↗';
 
   // Footer
   document.getElementById('footer-copy').textContent =
@@ -296,21 +296,47 @@ document.getElementById('photo-card').addEventListener('click', () => {
 
 /* ── Contact form ───────────────────────────────────────────── */
 
-document.getElementById('contact-form').addEventListener('submit', e => {
+document.getElementById('contact-form').addEventListener('submit', async e => {
   e.preventDefault();
-  document.getElementById('contact-form').style.display = 'none';
-  document.getElementById('form-success').classList.add('visible');
-});
+  const form      = e.target;
+  const submitBtn = form.querySelector('.form-submit');
+  const errorEl   = document.getElementById('form-error');
+  errorEl.style.display = 'none';
 
-/* ── Copy email ─────────────────────────────────────────────── */
+  if (!SITE.contactEndpoint) {
+    errorEl.textContent = 'Contact form isn\'t wired up yet — set SITE.contactEndpoint in data.js.';
+    errorEl.style.display = '';
+    return;
+  }
 
-let copyTimer;
-document.getElementById('copy-email-btn').addEventListener('click', () => {
-  try { navigator.clipboard.writeText(SITE.email); } catch (_) {}
-  const label = document.getElementById('copy-label');
-  label.textContent = 'copied ✓';
-  clearTimeout(copyTimer);
-  copyTimer = setTimeout(() => { label.textContent = SITE.email; }, 1800);
+  const payload = {
+    name:    form.name.value,
+    email:   form.email.value,
+    message: form.message.value,
+    company: form.company.value, // honeypot
+  };
+
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Sending…';
+
+  try {
+    const res = await fetch(SITE.contactEndpoint, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+    });
+    const data = await res.json().catch(() => ({}));
+    if (!res.ok || !data.ok) throw new Error(data.error || 'Failed to send message.');
+
+    form.style.display = 'none';
+    document.getElementById('form-success').classList.add('visible');
+  } catch (err) {
+    errorEl.textContent = err.message || 'Something went wrong. Please try again later.';
+    errorEl.style.display = '';
+  } finally {
+    submitBtn.disabled = false;
+    submitBtn.textContent = 'Send message →';
+  }
 });
 
 /* ── Hamburger menu ─────────────────────────────────────────── */
