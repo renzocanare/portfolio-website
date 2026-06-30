@@ -225,7 +225,13 @@ function unlockScroll() {
     document.body.style.left   = '';
     document.body.style.right  = '';
     document.body.style.width  = '';
+    // Jump back instantly — html { scroll-behavior: smooth } would
+    // otherwise animate the page sliding from the top back down to
+    // where the modal was opened.
+    const prevBehavior = document.documentElement.style.scrollBehavior;
+    document.documentElement.style.scrollBehavior = 'auto';
     window.scrollTo(0, lockedScrollY);
+    document.documentElement.style.scrollBehavior = prevBehavior;
   }
 }
 
@@ -358,20 +364,28 @@ navLinks.addEventListener('click', e => {
 
 const progressBar = document.getElementById('progress-bar');
 const backToTop   = document.getElementById('back-to-top');
-window.addEventListener('scroll', () => {
+
+function updateScrollUI() {
   const sc  = document.documentElement;
   const max = sc.scrollHeight - window.innerHeight;
-  progressBar.style.width = (max > 0 ? Math.min(100, (window.scrollY / max) * 100) : 0) + '%';
-}, { passive: true });
+  const y   = window.scrollY || sc.scrollTop || document.body.scrollTop || 0;
+  progressBar.style.width = (max > 0 ? Math.min(100, (y / max) * 100) : 0) + '%';
+  backToTop.classList.toggle('visible', y > 600);
+}
+window.addEventListener('scroll', updateScrollUI, { passive: true });
+updateScrollUI();
 
-// IntersectionObserver instead of a scrollY threshold — more reliable
-// than polling window.scrollY, which can misreport during momentum
-// scrolling in iOS Safari / standalone PWA mode.
+// IntersectionObserver as a second signal — covers cases where the
+// scroll listener gets throttled (e.g. iOS momentum scrolling).
 const scrollSentinel = document.getElementById('scroll-sentinel');
-const backToTopIO = new IntersectionObserver(([entry]) => {
-  backToTop.classList.toggle('visible', !entry.isIntersecting && entry.boundingClientRect.top < 0);
-}, { threshold: 0 });
-backToTopIO.observe(scrollSentinel);
+if (scrollSentinel) {
+  const backToTopIO = new IntersectionObserver(([entry]) => {
+    if (!entry.isIntersecting && entry.boundingClientRect.top < 0) {
+      backToTop.classList.add('visible');
+    }
+  }, { threshold: 0 });
+  backToTopIO.observe(scrollSentinel);
+}
 
 /* ── Active nav highlight ───────────────────────────────────── */
 

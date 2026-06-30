@@ -90,10 +90,11 @@ nav {
 }
 .nav-links a:hover { color: #e8ebf0; }
 .nav-links a.active { color: var(--accent); background: rgba(77,139,251,0.10); }
+.nav-links-contact { display: none; }
 .nav-right { display: flex; align-items: center; gap: 10px; }
 .nav-cta {
   font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 500;
-  color: #0a0c12; background: var(--accent);
+  color: #0a0c12; background: var(--accent); white-space: nowrap;
   padding: 8px 16px; border-radius: 7px; transition: opacity .15s;
 }
 .nav-cta:hover { opacity: 0.9; }
@@ -117,6 +118,12 @@ nav {
     border-bottom: 1px solid #1b2230; box-shadow: 0 24px 40px rgba(0,0,0,0.5);
   }
   .nav-links.open a { font-size: 15px !important; padding: 12px 14px !important; }
+  .nav-links.open .nav-links-contact { display: block; color: var(--accent); }
+}
+
+/* ---- very narrow screens: drop the CTA pill, rely on the hamburger ---- */
+@media (max-width: 420px) {
+  .nav-cta { display: none; }
 }
 
 /* ---- layout utilities ---- */
@@ -672,7 +679,9 @@ footer {
 
 /* ---- back to top ---- */
 #back-to-top {
-  position: fixed; bottom: 26px; right: 26px; z-index: 60;
+  position: fixed; z-index: 60;
+  bottom: max(26px, env(safe-area-inset-bottom) + 16px);
+  right: max(26px, env(safe-area-inset-right) + 16px);
   width: 44px; height: 44px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
   font-size: 18px; color: #aab3c2;
