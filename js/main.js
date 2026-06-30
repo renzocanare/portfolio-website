@@ -198,6 +198,36 @@ document.getElementById('filter-tabs').addEventListener('click', e => {
   renderProjects();
 });
 
+/* ── Scroll lock (iOS-safe — body { overflow: hidden } alone lets
+   Safari still pan/rubber-band the page behind a modal) ─────── */
+
+let lockedScrollY = 0;
+let lockCount = 0;
+
+function lockScroll() {
+  if (lockCount === 0) {
+    lockedScrollY = window.scrollY;
+    document.body.style.position = 'fixed';
+    document.body.style.top    = `-${lockedScrollY}px`;
+    document.body.style.left   = '0';
+    document.body.style.right  = '0';
+    document.body.style.width  = '100%';
+  }
+  lockCount++;
+}
+
+function unlockScroll() {
+  lockCount = Math.max(0, lockCount - 1);
+  if (lockCount === 0) {
+    document.body.style.position = '';
+    document.body.style.top    = '';
+    document.body.style.left   = '';
+    document.body.style.right  = '';
+    document.body.style.width  = '';
+    window.scrollTo(0, lockedScrollY);
+  }
+}
+
 /* ── Modal ──────────────────────────────────────────────────── */
 
 function openModal(idx) {
@@ -224,12 +254,13 @@ function openModal(idx) {
   liveBtn.style.display = p.live ? '' : 'none';
 
   document.getElementById('modal').classList.add('open');
-  document.body.style.overflow = 'hidden';
+  lockScroll();
 }
 
 function closeModalBtn() {
+  if (!document.getElementById('modal').classList.contains('open')) return;
   document.getElementById('modal').classList.remove('open');
-  document.body.style.overflow = '';
+  unlockScroll();
 }
 
 document.getElementById('modal').addEventListener('click', e => {
@@ -285,8 +316,16 @@ window.addEventListener('scroll', () => {
   const sc  = document.documentElement;
   const max = sc.scrollHeight - window.innerHeight;
   progressBar.style.width = (max > 0 ? Math.min(100, (window.scrollY / max) * 100) : 0) + '%';
-  backToTop.classList.toggle('visible', window.scrollY > 600);
 }, { passive: true });
+
+// IntersectionObserver instead of a scrollY threshold — more reliable
+// than polling window.scrollY, which can misreport during momentum
+// scrolling in iOS Safari / standalone PWA mode.
+const scrollSentinel = document.getElementById('scroll-sentinel');
+const backToTopIO = new IntersectionObserver(([entry]) => {
+  backToTop.classList.toggle('visible', !entry.isIntersecting && entry.boundingClientRect.top < 0);
+}, { threshold: 0 });
+backToTopIO.observe(scrollSentinel);
 
 /* ── Active nav highlight ───────────────────────────────────── */
 
@@ -357,12 +396,13 @@ function openCertModal(idx) {
   }
 
   document.getElementById('cert-modal').classList.add('open');
-  document.body.style.overflow = 'hidden';
+  lockScroll();
 }
 
 function closeCertModal() {
+  if (!document.getElementById('cert-modal').classList.contains('open')) return;
   document.getElementById('cert-modal').classList.remove('open');
-  document.body.style.overflow = '';
+  unlockScroll();
 }
 
 document.getElementById('cert-modal').addEventListener('click', e => {
