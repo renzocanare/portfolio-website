@@ -29,6 +29,7 @@ function init() {
   }
   document.getElementById('hero-github').href = SITE.github;
   document.getElementById('hero-linkedin').href = SITE.linkedin;
+  startQuipRotator();
 
   const [firstName, ...rest] = SITE.name.split(' ');
   const lastName = rest.join(' ');
@@ -270,8 +271,27 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') { closeModal
 
 /* ── Photo flip ─────────────────────────────────────────────── */
 
+const FLIP_EMOJIS = ['✨', '🎉', '😎', '🚀', '🎸', '📸', '☕', '🌊'];
+
+function burstEmojis() {
+  const burst = document.getElementById('emoji-burst');
+  for (let i = 0; i < 14; i++) {
+    const span = document.createElement('span');
+    span.className = 'emoji-particle';
+    span.textContent = FLIP_EMOJIS[Math.floor(Math.random() * FLIP_EMOJIS.length)];
+    span.style.left = Math.random() * 100 + '%';
+    span.style.fontSize = (14 + Math.random() * 10) + 'px';
+    span.style.animationDuration = (1.3 + Math.random() * 0.7) + 's';
+    span.style.animationDelay = (Math.random() * 0.25) + 's';
+    span.addEventListener('animationend', () => span.remove());
+    burst.appendChild(span);
+  }
+}
+
 document.getElementById('photo-card').addEventListener('click', () => {
-  document.getElementById('photo-inner').classList.toggle('flipped');
+  const inner = document.getElementById('photo-inner');
+  inner.classList.toggle('flipped');
+  if (inner.classList.contains('flipped')) burstEmojis();
 });
 
 /* ── Contact form ───────────────────────────────────────────── */
@@ -407,6 +427,54 @@ function closeCertModal() {
 
 document.getElementById('cert-modal').addEventListener('click', e => {
   if (e.target === document.getElementById('cert-modal')) closeCertModal();
+});
+
+/* ── Hero quip rotator ─────────────────────────────────────── */
+
+function startQuipRotator() {
+  const el = document.getElementById('hero-quip');
+  if (!el || !QUIPS || !QUIPS.length) return;
+  let i = 0;
+  const show = () => {
+    el.textContent = QUIPS[i];
+    el.classList.remove('quip-in');
+    void el.offsetWidth; // restart the CSS animation
+    el.classList.add('quip-in');
+    i = (i + 1) % QUIPS.length;
+  };
+  show();
+  setInterval(show, 4000);
+}
+
+/* ── Easter egg: 5 logo clicks or the Konami code ────────────── */
+
+function triggerEasterEgg() {
+  if (document.body.classList.contains('egg-active')) return;
+  document.body.classList.add('egg-active');
+  setTimeout(() => document.body.classList.remove('egg-active'), 1200);
+}
+
+let logoClicks = 0;
+let logoClickTimer;
+document.querySelector('.nav-logo').addEventListener('click', e => {
+  logoClicks++;
+  clearTimeout(logoClickTimer);
+  logoClickTimer = setTimeout(() => { logoClicks = 0; }, 1500);
+  if (logoClicks >= 5) {
+    e.preventDefault();
+    logoClicks = 0;
+    triggerEasterEgg();
+  }
+});
+
+const KONAMI = ['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','ArrowRight','ArrowLeft','ArrowRight','b','a'];
+let konamiProgress = 0;
+document.addEventListener('keydown', e => {
+  konamiProgress = (e.key === KONAMI[konamiProgress]) ? konamiProgress + 1 : 0;
+  if (konamiProgress === KONAMI.length) {
+    konamiProgress = 0;
+    triggerEasterEgg();
+  }
 });
 
 /* ── Kick everything off ────────────────────────────────────── */

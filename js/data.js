@@ -24,6 +24,7 @@ const SITE = {
   bio: [
     "I'm a software engineer with 2 years delivering enterprise and government applications. I work across the full stack and care about the details that make software reliable and feel good to use.",
     "I'm drawn to the intersection of engineering and product: understanding what to build, translating user needs into technical decisions, and owning delivery end-to-end. Currently based in Singapore, open to roles where engineering meets product thinking.",
+    "Outside of work, I'm usually on a tennis or golf court (badly, in golf's case), or off on a road trip chasing the parts of a place that aren't in the guidebook.",
   ],
 
   // ── Links ──────────────────────────────────────────────────
@@ -46,6 +47,20 @@ const SITE = {
     { key: 'Degree',      val: 'B.Eng. Computer Engineering (Hons)' },
   ],
 };
+
+// ── Hero quips ───────────────────────────────────────────────
+// Small rotating line under the hero description. Purely for fun —
+// edit freely, add/remove as many as you like.
+const QUIPS = [
+  "Currently arguing with a Scrum board.",
+  "Once modded a 20-year-old GameBoy back to life.",
+  "Has opinions about laundry machine IoT sensors.",
+  "Ships code, ships requirements, occasionally ships memes.",
+  "Singapore-based, semicolon-obsessed.",
+  "Weekly tennis, mostly for the sweat and the company.",
+  "Started golf recently. The lost-ball count is climbing fast.",
+  "Always plotting the next road trip to somewhere off the map.",
+];
 
 // ── Skills ─────────────────────────────────────────────────────
 const SKILLS = [
@@ -233,15 +248,25 @@ const PROJECTS = [
 // tags:     skill bubbles shown on the card and in the popup.
 // blurb:    short writeup shown in the popup, above the file/link.
 const CERTS = [
-  {
-    name:     'Graduate Certificate in Designing Modern Software Systems',
+   {
+    name:     'Cloud Native Solution Design',
     issuer:   'NUS-ISS',
     year:     '2025',
-    category: 'Graduate Cert',
-    tags:     ['Agile Practices', 'Software Design Patterns', 'DevSecOps', 'CI/CD'],
-    blurb:    'Covers how agile teams apply essential practices, software design principles, and DevSecOps techniques to analyse, design, and implement non-trivial software systems that are robust, reusable, maintainable, and extensible. Coursework spanned designing systems for target platforms, applying proven design patterns, and engineering automated DevSecOps pipelines for continuous delivery.',
-    file:     'assets/certs/nus_gradcert_dmss.pdf',
-    link:     'https://credentials.nus.edu.sg/6f000b55-848a-4118-a83e-61eaf631bc36',
+    category: 'NUS-ISS Module',
+    tags:     ['Cloud Native', 'Microservices', 'Containers', 'NoSQL'],
+    blurb:    'Covers designing and rapidly provisioning cloud-native solutions built from small, independent, loosely coupled services. Topics included scaling strategies, polyglot persistence and NoSQL, microservices suitability, container engineering, service cataloguing, security, and governance for cloud-native systems.',
+    file:     'assets/certs/nus_ass_cnsd.pdf',
+    link:     'https://credentials.nus.edu.sg/d3f7198c-a0b7-41bd-ac5d-ae277599ebda',
+  }, 
+  {
+    name:     'Platform Engineering',
+    issuer:   'NUS-ISS',
+    year:     '2025',
+    category: 'NUS-ISS Module',
+    tags:     ['Platform Engineering', 'API Design', 'Reusable Architecture'],
+    blurb:    'Covers architecting and engineering software platforms — designing reusable assets and common services, building frameworks, API design, and platform/data management — through hands-on workshops and case studies. Aimed at building scalable platforms that grow interconnected application ecosystems.',
+    file:     'assets/certs/nus_ass_pe.pdf',
+    link:     'https://credentials.nus.edu.sg/9207363b-d41f-480c-9a4a-4fd2be1fb2df',
   },
   {
     name:     'Architecting Software Solutions',
@@ -253,25 +278,15 @@ const CERTS = [
     file:     'assets/certs/nus_ass_archss.pdf',
     link:     'https://credentials.nus.edu.sg/7f2f6b44-b8bd-4f6f-be7a-82d748ca3858',
   },
-  {
-    name:     'Cloud Native Solution Design',
+    {
+    name:     'Graduate Certificate in Designing Modern Software Systems',
     issuer:   'NUS-ISS',
     year:     '2025',
-    category: 'NUS-ISS Module',
-    tags:     ['Cloud Native', 'Microservices', 'Containers', 'NoSQL'],
-    blurb:    'Covers designing and rapidly provisioning cloud-native solutions built from small, independent, loosely coupled services. Topics included scaling strategies, polyglot persistence and NoSQL, microservices suitability, container engineering, service cataloguing, security, and governance for cloud-native systems.',
-    file:     'assets/certs/nus_ass_cnsd.pdf',
-    link:     'https://credentials.nus.edu.sg/d3f7198c-a0b7-41bd-ac5d-ae277599ebda',
-  },
-  {
-    name:     'Platform Engineering',
-    issuer:   'NUS-ISS',
-    year:     '2025',
-    category: 'NUS-ISS Module',
-    tags:     ['Platform Engineering', 'API Design', 'Reusable Architecture'],
-    blurb:    'Covers architecting and engineering software platforms — designing reusable assets and common services, building frameworks, API design, and platform/data management — through hands-on workshops and case studies. Aimed at building scalable platforms that grow interconnected application ecosystems.',
-    file:     'assets/certs/nus_ass_pe.pdf',
-    link:     'https://credentials.nus.edu.sg/9207363b-d41f-480c-9a4a-4fd2be1fb2df',
+    category: 'Graduate Cert',
+    tags:     ['Agile Practices', 'Software Design Patterns', 'DevSecOps', 'CI/CD'],
+    blurb:    'Covers how agile teams apply essential practices, software design principles, and DevSecOps techniques to analyse, design, and implement non-trivial software systems that are robust, reusable, maintainable, and extensible. Coursework spanned designing systems for target platforms, applying proven design patterns, and engineering automated DevSecOps pipelines for continuous delivery.',
+    file:     'assets/certs/nus_gradcert_dmss.pdf',
+    link:     'https://credentials.nus.edu.sg/6f000b55-848a-4118-a83e-61eaf631bc36',
   },
   {
     name:     'Professional Scrum Developer I (PSD1)',

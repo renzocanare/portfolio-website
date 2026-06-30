@@ -13,6 +13,17 @@ body {
   line-height: 1.6; overflow-x: hidden;
 }
 ::selection { background: rgba(77,139,251,0.30); }
+
+/* ---- easter egg: 5 logo clicks or the Konami code ---- */
+body.egg-active {
+  overflow: hidden;
+  animation: egg-barrel-roll 1s ease-in-out;
+  transform-origin: 50% 50%;
+}
+@keyframes egg-barrel-roll {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 a { color: inherit; text-decoration: none; }
 button { font-family: inherit; cursor: pointer; border: none; background: none; }
 input, textarea { font-family: inherit; }
@@ -136,8 +147,18 @@ nav {
   font-size: clamp(19px, 2.4vw, 26px); color: #aab3c2;
   margin: 0 0 14px; font-weight: 500;
 }
-.hero-desc { font-size: 17px; color: #8a93a3; max-width: 520px; margin: 0 0 32px; }
+.hero-desc { font-size: 17px; color: #8a93a3; max-width: 520px; margin: 0 0 14px; }
 .hero-desc em { color: #c4ccd8; font-style: normal; }
+.hero-quip {
+  font-family: 'JetBrains Mono', monospace; font-size: 13px;
+  color: var(--accent); max-width: 520px; margin: 0 0 28px; min-height: 18px;
+}
+.hero-quip::before { content: '// '; opacity: .6; }
+.hero-quip.quip-in { animation: quip-fade .5s ease; }
+@keyframes quip-fade {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
 .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
 .btn-primary {
   font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 500;
@@ -212,6 +233,21 @@ nav {
   font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #4a5568;
 }
 .photo-back .photo-flip-hint { color: #5e76b8; }
+.emoji-burst {
+  position: absolute; inset: 0; overflow: visible;
+  pointer-events: none; z-index: 5;
+}
+.emoji-particle {
+  position: absolute; top: -10%; opacity: 0; will-change: transform, opacity;
+  animation-name: emoji-fall; animation-timing-function: cubic-bezier(.36,.05,.5,.95);
+  animation-fill-mode: forwards;
+}
+@keyframes emoji-fall {
+  0%   { transform: translateY(0) rotate(0deg); opacity: 0; }
+  8%   { opacity: 1; }
+  85%  { opacity: 1; }
+  100% { transform: translateY(380px) rotate(360deg); opacity: 0; }
+}
 .photo-badge {
   position: absolute; bottom: -14px; left: -14px;
   background: #12151d; border: 1px solid #232a36; border-radius: 9px;
@@ -272,8 +308,19 @@ nav {
 }
 .skill-tags { display: flex; flex-wrap: wrap; gap: 8px; }
 .skill-tag {
+  display: inline-block;
   font-size: 13px; color: #c4ccd8; background: #161b25;
   border: 1px solid #232a36; border-radius: 7px; padding: 6px 11px;
+  transition: border-color .15s, color .15s;
+}
+.skill-tag:hover {
+  border-color: var(--accent); color: #fff;
+  animation: tag-wiggle .4s ease;
+}
+@keyframes tag-wiggle {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  25%      { transform: rotate(-4deg) scale(1.06); }
+  75%      { transform: rotate(4deg) scale(1.06); }
 }
 
 /* ---- experience ---- */
