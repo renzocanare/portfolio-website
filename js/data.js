@@ -223,12 +223,74 @@ const PROJECTS = [
 ];
 
 // ── Certifications ─────────────────────────────────────────────
-// file: path to certificate — image (png/jpg) or PDF.
-//       e.g. 'assets/certs/psd1.pdf' or 'assets/certs/aws.png'
-//       Leave as '' to show a placeholder in the popup.
-// link: URL for external credential verification. Use '' to hide the button.
+// file:     path to certificate — image (png/jpg) or PDF.
+//           e.g. 'assets/certs/psd1.pdf' or 'assets/certs/aws.png'
+//           Leave as '' to show a placeholder in the popup.
+// link:     URL for external credential verification (e.g. the issuer's
+//           credential page). Use '' to hide the button.
+// category: short badge shown top-left of the card, e.g. 'Graduate Cert',
+//           'Professional Cert'. Use '' to hide the badge.
+// tags:     skill bubbles shown on the card and in the popup.
+// blurb:    short writeup shown in the popup, above the file/link.
 const CERTS = [
-  { name: 'Graduate Certificate in Designing Modern Software Systems', issuer: 'NUS-ISS', year: '2025', file: 'assets/certs/nus_gradcert_dmss.pdf', link: 'https://credentials.nus.edu.sg/6f000b55-848a-4118-a83e-61eaf631bc36' },
-  { name: 'Professional Scrum Developer I (PSD1)', issuer: 'Scrum.org', year: '2024', file: 'assets/certs/psd-i.png', link: 'https://www.credly.com/badges/493214eb-defd-4582-8b42-0f82f5f20ef4' },
-  { name: 'Professional Certificate in Introduction to Python Programming', issuer: 'edX', year: '2023', file: 'assets/certs/edx_python_programming.pdf', link: 'https://credentials.edx.org/credentials/732d7ffac8444902be0ee276aeb8a233/' },
+  {
+    name:     'Graduate Certificate in Designing Modern Software Systems',
+    issuer:   'NUS-ISS',
+    year:     '2025',
+    category: 'Graduate Cert',
+    tags:     ['Agile Practices', 'Software Design Patterns', 'DevSecOps', 'CI/CD'],
+    blurb:    'Covers how agile teams apply essential practices, software design principles, and DevSecOps techniques to analyse, design, and implement non-trivial software systems that are robust, reusable, maintainable, and extensible. Coursework spanned designing systems for target platforms, applying proven design patterns, and engineering automated DevSecOps pipelines for continuous delivery.',
+    file:     'assets/certs/nus_gradcert_dmss.pdf',
+    link:     'https://credentials.nus.edu.sg/6f000b55-848a-4118-a83e-61eaf631bc36',
+  },
+  {
+    name:     'Architecting Software Solutions',
+    issuer:   'NUS-ISS',
+    year:     '2025',
+    category: 'NUS-ISS Module',
+    tags:     ['Solution Architecture', 'Security', 'Scalability', 'Maintainability'],
+    blurb:    'Focuses on solution architecture for enterprise applications, covering software qualities like security, availability, performance, and maintainability. Combined lectures with scenario-based workshops across web, mobile, and cloud domains to design robust, secure, and maintainable architectures.',
+    file:     'assets/certs/nus_ass_archss.pdf',
+    link:     'https://credentials.nus.edu.sg/7f2f6b44-b8bd-4f6f-be7a-82d748ca3858',
+  },
+  {
+    name:     'Cloud Native Solution Design',
+    issuer:   'NUS-ISS',
+    year:     '2025',
+    category: 'NUS-ISS Module',
+    tags:     ['Cloud Native', 'Microservices', 'Containers', 'NoSQL'],
+    blurb:    'Covers designing and rapidly provisioning cloud-native solutions built from small, independent, loosely coupled services. Topics included scaling strategies, polyglot persistence and NoSQL, microservices suitability, container engineering, service cataloguing, security, and governance for cloud-native systems.',
+    file:     'assets/certs/nus_ass_cnsd.pdf',
+    link:     'https://credentials.nus.edu.sg/d3f7198c-a0b7-41bd-ac5d-ae277599ebda',
+  },
+  {
+    name:     'Platform Engineering',
+    issuer:   'NUS-ISS',
+    year:     '2025',
+    category: 'NUS-ISS Module',
+    tags:     ['Platform Engineering', 'API Design', 'Reusable Architecture'],
+    blurb:    'Covers architecting and engineering software platforms — designing reusable assets and common services, building frameworks, API design, and platform/data management — through hands-on workshops and case studies. Aimed at building scalable platforms that grow interconnected application ecosystems.',
+    file:     'assets/certs/nus_ass_pe.pdf',
+    link:     'https://credentials.nus.edu.sg/9207363b-d41f-480c-9a4a-4fd2be1fb2df',
+  },
+  {
+    name:     'Professional Scrum Developer I (PSD1)',
+    issuer:   'Scrum.org',
+    year:     '2024',
+    category: 'Professional Cert',
+    tags:     ['Scrum', 'Software Craftsmanship', 'TDD', 'Continuous Integration'],
+    blurb:    "Validates the ability to work as a developer on a Scrum team, applying core engineering practices — test-driven development, continuous integration, and emergent design — to build high-quality, working software within the Scrum framework.",
+    file:     'assets/certs/psd-i.png',
+    link:     'https://www.credly.com/badges/493214eb-defd-4582-8b42-0f82f5f20ef4',
+  },
+  {
+    name:     'Professional Certificate in Introduction to Python Programming',
+    issuer:   'edX',
+    year:     '2023',
+    category: 'Professional Cert',
+    tags:     ['Python', 'Programming Fundamentals', 'Problem Solving'],
+    blurb:    'Covers core Python programming fundamentals — syntax, data structures, control flow, and functions — through hands-on exercises, building a foundation for further work in data science and software development.',
+    file:     'assets/certs/edx_python_programming.pdf',
+    link:     'https://credentials.edx.org/credentials/732d7ffac8444902be0ee276aeb8a233/',
+  },
 ];

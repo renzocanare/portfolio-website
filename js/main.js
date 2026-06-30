@@ -88,18 +88,46 @@ function init() {
       <p class="timeline-desc">${e.desc}</p>
     </div>`).join('');
 
-  // Certs
+  // Certs — featured (full certifications) vs. compact coursework/modules
+  const featuredCerts = CERTS.filter(c => c.category !== 'NUS-ISS Module');
+  const moduleCerts    = CERTS.filter(c => c.category === 'NUS-ISS Module');
+
   const certsEl = document.getElementById('certs-grid');
-  certsEl.innerHTML = CERTS.map((c, idx) => `
+  certsEl.innerHTML = featuredCerts.map(c => {
+    const idx = CERTS.indexOf(c);
+    return `
     <div class="cert-card" style="cursor:pointer;position:relative;" onclick="openCertModal(${idx})">
+      ${c.category ? `<span class="cert-category-badge">${c.category}</span>` : ''}
       <div class="cert-icon">✦</div>
-      <div style="flex:1;">
+      <div style="flex:1;${c.category ? 'margin-top:22px;' : ''}">
         <h3 class="cert-name">${c.name}</h3>
         <div class="cert-issuer">${c.issuer}</div>
         <div class="cert-year">${c.year}</div>
+        ${c.tags && c.tags.length ? `
+          <div class="cert-tags">
+            ${c.tags.map(t => `<span class="cert-tag">${t}</span>`).join('')}
+          </div>` : ''}
       </div>
       <div class="cert-view-hint">click to view →</div>
-    </div>`).join('');
+    </div>`;
+  }).join('');
+
+  const modulesEl = document.getElementById('cert-modules-list');
+  modulesEl.innerHTML = moduleCerts.map(c => {
+    const idx = CERTS.indexOf(c);
+    return `
+    <div class="cert-module-row" onclick="openCertModal(${idx})">
+      <div class="cert-module-main">
+        <span class="cert-module-name">${c.name}</span>
+        <span class="cert-module-meta">${c.issuer} · ${c.year}</span>
+      </div>
+      ${c.tags && c.tags.length ? `
+        <div class="cert-tags cert-module-tags">
+          ${c.tags.map(t => `<span class="cert-tag">${t}</span>`).join('')}
+        </div>` : ''}
+      <span class="cert-module-arrow">→</span>
+    </div>`;
+  }).join('');
 
   // Projects (initial render)
   renderProjects();
@@ -299,6 +327,14 @@ function openCertModal(idx) {
   document.getElementById('cert-modal-issuer').textContent = c.issuer;
   document.getElementById('cert-modal-title').textContent  = c.name;
   document.getElementById('cert-modal-year').textContent   = c.year;
+
+  const blurbEl = document.getElementById('cert-modal-blurb');
+  blurbEl.textContent = c.blurb || '';
+  blurbEl.style.display = c.blurb ? '' : 'none';
+
+  const tagsEl = document.getElementById('cert-modal-tags');
+  tagsEl.innerHTML = (c.tags || []).map(t => `<span class="cert-tag">${t}</span>`).join('');
+  tagsEl.style.display = (c.tags && c.tags.length) ? '' : 'none';
 
   const imgWrap = document.getElementById('cert-modal-img-wrap');
   if (c.file && c.file.toLowerCase().endsWith('.pdf')) {
